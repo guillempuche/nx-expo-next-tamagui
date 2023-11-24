@@ -15,11 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"],
+      "@nx-expo-next-tamagui/app/home": ["packages/app/home/src/index.ts"],
       "@nx-expo-next-tamagui/app/provider": [
         "packages/app/provider/src/index.tsx"
       ],
-      "@nx-expo-next-tamagui/app/home": ["packages/app/home/src/index.ts"]
+      "@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"]
     },
     "plugins": [
       {
