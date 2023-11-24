@@ -1,0 +1,37 @@
+{
+  "name": "expo",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index",
+  "dependencies": {
+    "@nx/expo": "*",
+    "@expo/metro-config": "*",
+    "metro-config": "*",
+    "react-native-svg-transformer": "*",
+    "tamagui": "*",
+    "@storybook/react": "*",
+    "@tamagui/linear-gradient": "*",
+    "@tamagui/shorthands": "*",
+    "@tamagui/themes": "*",
+    "@tamagui/theme-builder": "*",
+    "@tamagui/web": "*",
+    "react": "*",
+    "@tamagui/lucide-icons": "*",
+    "@react-navigation/bottom-tabs": "*",
+    "expo-router": "*",
+    "react-native": "*",
+    "@expo/vector-icons": "*",
+    "@react-navigation/native": "*",
+    "expo-status-bar": "*",
+    "solito": "*",
+    "react-test-renderer": "*",
+    "@tamagui/config": "*",
+    "next": "*",
+    "react-native-url-polyfill": "*",
+    "expo-web-browser": "*"
+  },
+  "scripts": {
+    "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . packages/expo && cp yarn.lock packages/expo",
+    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . packages/expo"
+  }
+}
