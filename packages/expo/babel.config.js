@@ -11,9 +11,9 @@ module.exports = function (api) {
         {
           config: './tamagui.config.ts',
           components: [
-            '@nx-next-reactnative-tamagui/app/provider',
-            '@nx-next-reactnative-tamagui/app/home',
-            '@nx-next-reactnative-tamagui/components',
+            '@nx-expo-next-tamagui/app/provider',
+            '@nx-expo-next-tamagui/app/home',
+            '@nx-expo-next-tamagui/components',
             'tamagui',
           ],
           logTimings: true,

@@ -15,15 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-next-reactnative-tamagui/components": [
-        "packages/components/src/index.ts"
-      ],
-      "@nx-next-reactnative-tamagui/app/provider": [
+      "@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"],
+      "@nx-expo-next-tamagui/app/provider": [
         "packages/app/provider/src/index.tsx"
       ],
-      "@nx-next-reactnative-tamagui/app/home": [
-        "packages/app/home/src/index.ts"
-      ]
+      "@nx-expo-next-tamagui/app/home": ["packages/app/home/src/index.ts"]
     },
     "plugins": [
       {

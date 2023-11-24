@@ -1,5 +1,5 @@
 // import { Avatar, Circle, Theme, YStack, useThemeName } from '@my/ui'
-import { HomeScreen } from '@nx-next-reactnative-tamagui/app/home';
+import { HomeScreen } from '@nx-expo-next-tamagui/app/home';
 import { BottomTabNavigationOptions } from '@react-navigation/bottom-tabs';
 import { LinearGradient } from '@tamagui/linear-gradient';
 import { Home, Plus } from '@tamagui/lucide-icons';

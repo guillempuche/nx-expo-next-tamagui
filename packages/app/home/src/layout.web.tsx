@@ -12,7 +12,7 @@ import {
   YStack,
   getTokens,
   useThemeName,
-} from '@nx-next-reactnative-tamagui/components';
+} from '@nx-expo-next-tamagui/components';
 import { Menu, Plus } from '@tamagui/lucide-icons';
 import { useRouter as useNextRouter } from 'next/router';
 import { useEffect, useState } from 'react';

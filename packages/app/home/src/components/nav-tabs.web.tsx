@@ -8,7 +8,7 @@ import {
   Tabs,
   TabsProps,
   TabsTabProps,
-} from '@nx-next-reactnative-tamagui/components';
+} from '@nx-expo-next-tamagui/components';
 import { useRouter as useNextRouter } from 'next/router';
 import { useState } from 'react';
 import { useRouter } from 'solito/router';

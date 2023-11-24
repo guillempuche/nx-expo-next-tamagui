@@ -1,15 +1,15 @@
 {
   "components": [
     {
-      "moduleName": "@nx-next-reactnative-tamagui/app/provider",
+      "moduleName": "@nx-expo-next-tamagui/app/provider",
       "nameToInfo": {}
     },
     {
-      "moduleName": "@nx-next-reactnative-tamagui/app/home",
+      "moduleName": "@nx-expo-next-tamagui/app/home",
       "nameToInfo": {}
     },
     {
-      "moduleName": "@nx-next-reactnative-tamagui/components",
+      "moduleName": "@nx-expo-next-tamagui/components",
       "nameToInfo": {
         "Anchor": {
           "staticConfig": {

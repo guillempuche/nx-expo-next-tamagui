@@ -11,7 +11,7 @@ import {
   YStack,
   isWeb,
   useMedia,
-} from '@nx-next-reactnative-tamagui/components';
+} from '@nx-expo-next-tamagui/components';
 import {
   ArrowRight,
   DollarSign,

@@ -1,7 +1,7 @@
-import { TamaguiProvider as TamaguiProviderOG } from '@nx-next-reactnative-tamagui/components';
+import { TamaguiProvider as TamaguiProviderOG } from '@nx-expo-next-tamagui/components';
 import React from 'react';
 
-import { tamaguiComponentsConfig } from '@nx-next-reactnative-tamagui/components';
+import { tamaguiComponentsConfig } from '@nx-expo-next-tamagui/components';
 import { useRootTheme } from '../theme/UniversalThemeProvider';
 
 export const TamaguiProvider = ({

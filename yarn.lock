@@ -18022,9 +18022,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx-next-reactnative-tamagui@workspace:.":
+"nx-expo-next-tamagui@workspace:.":
   version: 0.0.0-use.local
-  resolution: "nx-next-reactnative-tamagui@workspace:."
+  resolution: "nx-expo-next-tamagui@workspace:."
   dependencies:
     "@expo/cli": "npm:~0.10.13"
     "@expo/metro-config": "npm:~0.10.7"
