@@ -1,4 +1,4 @@
-# Template as a monorepo: Nx, pnpm, Expo, NextJS, Tamagui & Solito
+# Template as a monorepo: Nx, Expo React Native, NextJS, Tamagui & Solito
 
 The utopia is to code once and have a native app and a native website.
 
