@@ -11,16 +11,6 @@
         "sync-deps"
       ],
       "options": {
-        "port": 8081
-      }
-    },
-    "start-clear": {
-      "executor": "nx:run-commands",
-      "dependsOn": [
-        "ensure-symlink",
-        "sync-deps"
-      ],
-      "options": {
         "port": 8081,
         "clear": true
       }

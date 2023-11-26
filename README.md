@@ -12,10 +12,10 @@ We can be close to that heaven. If we go deep into Typescript & React ecosystem,
 
 ## Setup the repo
 
-- Test it with NodeJS v18. You can use Node Version Manager or [NVM](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm) to manage multiple Node versions.
-- Install `yarn` and enable the latest version with running this command `yarn set version berry`. You can use npm easily, just delete:
-  - Field `packageManager` on `package.json`
-  - `yarn.lock` file
+- Test it with NodeJS v18. You can use [NVM](https://github.com/nvm-sh/nvm) (Node Version Manager) or [fnm](https://github.com/Schniz/fnm) to manage multiple Node versions.
+- Install `yarn` and enable the latest version with running this command `yarn set version berry`. You can use `npm` easily, just delete:
+  - The `packageManager` field in `package.json`
+  - The `yarn.lock` file
 - Replace the monorepo's name for yours. Get tge name found in `package.json` field `name` (e.g. `nx-expo-next-tamagui`), find all of them around the code and replace them for your desired name.
 
 > Don't consider this character `@`, we don't replace or migrate it.
@@ -33,6 +33,7 @@ We can be close to that heaven. If we go deep into Typescript & React ecosystem,
 - For Expo app
   - When updating `expo`, `expo-router`, `metro`, `@nx/expo` or related packages that needs configuration (e.g. `metro.config.js`, `babel.config.js`, `app.json`, `package.json`, `project.json`, `tamagui.config.js`...), consider symlinks compatibility with Metro. Keep an eye on Metro's changelog [here](https://github.com/facebook/metro/blob/main/CHANGELOG.md), even if Expo says is better to user other Metro versions, test other versions.
   - If you do some dependency changes and the Expo app doesn't work, check which installed packages need to be updated with: `npx expo-doctor` ([docs]( `npx expo install --check` )) and `npx expo install --check` ([docs](https://docs.expo.dev/more/expo-cli/#version-validation)).
+  - If you have errors running the app, you can enable Nx debug mode in `apps/expo/metro.config.js`, set `debug` to `true`.
 - To create new libraries or apps, use the Nx extension for VSCode or JetBrains (download it [here](https://nx.dev/core-features/integrate-with-editors)). The other option is using the CLI, however, you can make more errors. After creating the library/app, compared with boilerplate libraries and apps to clean unused settings (test, dependencies... or whatever you don't want) for Nx, React, Metro, Expo, NextJS, Tamagui...
 - I couldn't run the Expo app using [pnPm](https://pnpm.io/) (the alternative to NPM and Yarn package managers). I think the problem is with symlinks, even when changing the config like [npmrc-->node-linker](https://pnpm.io/npmrc#node-linker) doesn't work.
 - My Android (e.g. [SDKMAN](https://sdkman.io/) to manage Java versions) and iOS environment configuration for macOS with [Zsh](https://ohmyz.sh/), my `~/.zshrc` file:

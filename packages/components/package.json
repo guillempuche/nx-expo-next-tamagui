@@ -1,8 +1,0 @@
-{
-  "name": "@nx-expo-next-tamagui/components",
-  "version": "0.0.1",
-  "main": "./src/index.ts",
-  "module": "./index.mjs",
-  "typings": "./index.d.ts",
-  "dependencies": {}
-}

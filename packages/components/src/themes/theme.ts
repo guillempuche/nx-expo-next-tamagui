@@ -1,50 +1,72 @@
 import { createThemeBuilder } from '@tamagui/theme-builder';
 
-// import { componentThemeDefinitions } from './componentThemeDefinitions';
-// import { masks } from './masks';
-// import { palettes } from './palettes'
-// import { shadows } from './shadows'
-// import { maskOptions, templates } from './templates'
 import { darkColors, lightColors } from './token-colors';
+import { palettes } from './palettes';
 
-const colorThemeDefinition = (colorName: string) => [
-  {
-    parent: 'light',
-    palette: colorName,
-    template: 'colorLight',
-  },
-  {
-    parent: 'dark',
-    palette: colorName,
-    template: 'base',
-  },
+const colorPalette_Light = [
+  '#ffffff',
+  '#ffeeed',
+  '#ffdcdc',
+  '#ffcbcb',
+  '#ffb9ba',
+  '#fda7a9',
+  '#fa9598',
+  '#f78288',
+  '#f36e77',
+  '#ee5967',
+  '#e94057',
+  '#0A0A0A',
+];
+
+const colorPalette_Dark = [
+  '#0A0A0A',
+  '#030000',
+  '#130103',
+  '#290508',
+  '#410b12',
+  '#5a131c',
+  '#741b27',
+  '#902433',
+  '#ad2d3e',
+  '#cb364b',
+  '#e94057',
+  '#f3f3f3',
 ];
 
 const themesBuilder = createThemeBuilder()
+  .addPalettes({
+    dark: colorPalette_Dark,
+    light: colorPalette_Light,
+  })
+  .addTemplates({
+    base: {
+      background: 0,
+      backgroundHover: 3,
+      backgroundPress: 4,
+      backgroundFocus: 5,
+      backgroundStrong: 1,
+      backgroundTransparent: 0,
+      color: -0,
+      colorHover: -2,
+      colorPress: -1,
+      colorFocus: -2,
+      colorTransparent: -0,
+      borderColor: 5,
+      borderColorHover: 6,
+      borderColorFocus: 4,
+      borderColorPress: 5,
+      placeholderColor: -4,
+    },
+  })
   .addThemes({
     light: {
       template: 'base',
       palette: 'light',
-      nonInheritedValues: {
-        ...lightColors,
-      },
     },
     dark: {
       template: 'base',
       palette: 'dark',
-      nonInheritedValues: {
-        ...darkColors,
-      },
     },
-  })
-  .addChildThemes({
-    orange: colorThemeDefinition('orange'),
-    yellow: colorThemeDefinition('yellow'),
-    green: colorThemeDefinition('green'),
-    blue: colorThemeDefinition('blue'),
-    purple: colorThemeDefinition('purple'),
-    pink: colorThemeDefinition('pink'),
-    red: colorThemeDefinition('red'),
   });
 // .addChildThemes({
 //   alt1: {

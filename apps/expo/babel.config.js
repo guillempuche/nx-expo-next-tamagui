@@ -12,7 +12,9 @@ module.exports = function (api) {
           config: './tamagui.config.ts',
           components: [
             '@nx-expo-next-tamagui/app/provider',
-            '@nx-expo-next-tamagui/app/home',
+            '@nx-expo-next-tamagui/app/benefits',
+            '@nx-expo-next-tamagui/app/resources',
+            '@nx-expo-next-tamagui/app/welcome',
             '@nx-expo-next-tamagui/components',
             'tamagui',
           ],
@@ -21,8 +23,8 @@ module.exports = function (api) {
       ],
       'expo-router/babel',
 
-      // Reanimated plugin has to be listed last according to the documentation https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/
-      'react-native-reanimated/plugin',
+      // // Reanimated plugin has to be listed last according to the documentation https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/
+      // 'react-native-reanimated/plugin',
     ],
   };
 };

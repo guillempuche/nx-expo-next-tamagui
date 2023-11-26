@@ -1,7 +1,7 @@
 {
-  "name": "home",
+  "name": "resources",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/app/home/src",
+  "sourceRoot": "packages/app/resources/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -12,7 +12,7 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "packages/app/home/**/*.{ts,tsx,js,jsx}"
+          "packages/app/resources/**/*.{ts,tsx,js,jsx}"
         ]
       }
     }

@@ -4,16 +4,27 @@
   "sourceRoot": "packages/components/src",
   "projectType": "library",
   "targets": {
-    "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
+    "build-theme": {
+      "executor": "nx:run-commands",
       "options": {
-        "outputPath": "dist/packages/components"
+        "commands": [
+          {
+            "command": "tamagui-build ./packages/components/src"
+          }
+        ]
+      }
+    },
+    "generate-theme": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tamagui generate-themes ./packages/components/src/themes/theme.ts ./packages/components/src/themes/theme-generated.ts"
       }
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "packages/components/**/*.ts",

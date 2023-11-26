@@ -1,11 +1,4 @@
+// Warning: the field `main` of `package.json`file needs to point to this file.
+
 import 'react-native-url-polyfill/auto';
 import 'expo-router/entry';
-
-// import { registerRootComponent } from 'expo';
-// import { ExpoRoot } from 'expo-router';
-// // Must be exported or Fast Refresh won't update the context
-// export function App() {
-//   const ctx = require.context('./app');
-//   return <ExpoRoot context={ctx} />;
-// }
-// registerRootComponent(App);

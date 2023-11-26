@@ -1,33 +1,30 @@
 import {
-  Avatar,
+  Button,
   Card,
   CardProps,
   H4,
-  H6,
   Image,
   Paragraph,
-  TooltipSimple,
-  XStack,
+  Text,
   YStack,
 } from 'tamagui';
-import { LinearGradient } from '@tamagui/linear-gradient';
+import { Link } from 'solito/link';
+import { Linking } from 'react-native';
 
 export const SimpleCard = ({
   title,
   description,
-  tag,
-  authors,
-  withImages,
+  link,
+  withImages = true,
   ...props
 }: {
   title: string;
-  description?: string;
-  tag?: string;
-  authors?: { avatar: string; name: string; id: number }[];
+  description: string;
+  link: string;
   withImages?: boolean;
 } & CardProps) => {
   return (
-    <Card borderRadius="$4" bordered overflow="hidden" {...props}>
+    <Card borderRadius="$8" bordered overflow="hidden" {...props}>
       <Card.Header>
         {withImages && (
           <Image
@@ -41,52 +38,17 @@ export const SimpleCard = ({
           />
         )}
         <YStack px="$4" pt="$4" gap="$2">
-          {!!tag && (
-            <H6 size="$2" theme="alt2" mb="$1">
-              {tag}
-            </H6>
-          )}
-
           <H4 size="$5" textTransform="capitalize">
             {title}
           </H4>
-          {!!description && (
-            <Paragraph size="$3" theme="alt1">
-              {description}
-            </Paragraph>
-          )}
+          {!!description && <Paragraph size="$3">{description}</Paragraph>}
         </YStack>
       </Card.Header>
-      <Card.Footer jc="space-between" ai="center" padded gap="$2">
-        {authors && authors.length > 0 && (
-          <XStack>
-            {authors.map((author) => (
-              <TooltipSimple key={author.id} label={author.name}>
-                <Avatar circular size={32} mr="$-2">
-                  <Avatar.Image
-                    source={{
-                      uri: author.avatar,
-                      width: 32,
-                      height: 32,
-                    }}
-                  />
-                </Avatar>
-              </TooltipSimple>
-            ))}
-          </XStack>
-        )}
+      <Card.Footer padded px="$4">
+        <Link href={link}>
+          <Button onPress={() => Linking.openURL(link)}>Explore More</Button>
+        </Link>
       </Card.Footer>
-
-      <Card.Background>
-        <LinearGradient
-          // borderRadius="$4"
-          width="100%"
-          height="100%"
-          colors={['$color2', '$color1']}
-          start={[1, 1]}
-          end={[0.85, 0]}
-        />
-      </Card.Background>
     </Card>
   );
 };
