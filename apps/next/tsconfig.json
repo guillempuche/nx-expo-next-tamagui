@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "preserve",
+
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -11,14 +12,19 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "types": ["jest", "node"]
+    "plugins": [{ "name": "next" }]
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+
+    "../../apps/next/.next/types/**/*.ts",
+    "../../dist/apps/next/.next/types/**/*.ts",
+
+    "next-env.d.ts"
+  ],
   "exclude": [
     "node_modules",
     "jest.config.ts",

@@ -18,14 +18,14 @@
       "@nx-expo-next-tamagui/app/benefits": [
         "packages/app/benefits/src/index.ts"
       ],
+      "@nx-expo-next-tamagui/app/provider": [
+        "packages/app/provider/src/index.tsx"
+      ],
       "@nx-expo-next-tamagui/app/resources": [
         "packages/app/resources/src/index.ts"
       ],
       "@nx-expo-next-tamagui/app/welcome": [
         "packages/app/welcome/src/index.ts"
-      ],
-      "@nx-expo-next-tamagui/app/provider": [
-        "packages/app/provider/src/index.tsx"
       ],
       "@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"]
     },

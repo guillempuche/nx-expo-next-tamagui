@@ -1,7 +1,6 @@
-import { createThemeBuilder } from '@tamagui/theme-builder';
+// File imported in the NextJS configuration
 
-import { darkColors, lightColors } from './token-colors';
-import { palettes } from './palettes';
+import { createThemeBuilder } from '@tamagui/theme-builder';
 
 const colorPalette_Light = [
   '#ffffff',
