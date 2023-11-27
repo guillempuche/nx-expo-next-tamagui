@@ -32,15 +32,12 @@ export default function TabLayout() {
           headerRight: () => (
             <Link href="/modal">
               <Pressable>
-                {({ pressed }) => {
-                  console.log('pressed:');
-                  return (
-                    <LucideIcons.Info
-                      size={25}
-                      style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                    />
-                  );
-                }}
+                {({ pressed }) => (
+                  <LucideIcons.Info
+                    size={25}
+                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
+                  />
+                )}
               </Pressable>
             </Link>
           ),
