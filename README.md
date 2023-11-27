@@ -97,6 +97,11 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
 
+## To Do
+
+- Replecate Expo app in Next app.
+- Create Storybook
+
 ## Resources
 
 - Nx packages (AKA, the plugins) at [nx.dev/plugin-registry](https://nx.dev/plugin-registry) where you can find all you need to create, edit and run the monorepo.
