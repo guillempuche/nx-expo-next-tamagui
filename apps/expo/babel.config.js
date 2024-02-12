@@ -1,30 +1,24 @@
-module.exports = function (api) {
-  api.cache(true);
+module.exports = (api) => {
+	api.cache(true);
 
-  return {
-    // // Generate inline source maps
-    // sourceMaps: 'inline',
-    presets: ['babel-preset-expo'],
-    plugins: [
-      [
-        '@tamagui/babel-plugin',
-        {
-          config: './tamagui.config.ts',
-          components: [
-            '@nx-expo-next-tamagui/app/provider',
-            '@nx-expo-next-tamagui/app/benefits',
-            '@nx-expo-next-tamagui/app/resources',
-            '@nx-expo-next-tamagui/app/welcome',
-            '@nx-expo-next-tamagui/components',
-            'tamagui',
-          ],
-          logTimings: true,
-        },
-      ],
-      'expo-router/babel',
-
-      // // Reanimated plugin has to be listed last according to the documentation https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/
-      // 'react-native-reanimated/plugin',
-    ],
-  };
+	return {
+		presets: ['babel-preset-expo'],
+		plugins: [
+			[
+				'@tamagui/babel-plugin',
+				{
+					config: './tamagui.config.ts',
+					components: [
+						'@nx-expo-next-tamagui/app/provider',
+						'@nx-expo-next-tamagui/app/benefits',
+						'@nx-expo-next-tamagui/app/resources',
+						'@nx-expo-next-tamagui/app/welcome',
+						'@nx-expo-next-tamagui/components',
+						'tamagui',
+					],
+					logTimings: true,
+				},
+			],
+		],
+	};
 };

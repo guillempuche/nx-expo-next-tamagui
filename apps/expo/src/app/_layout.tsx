@@ -1,45 +1,50 @@
-import { Provider } from '@nx-expo-next-tamagui/app/provider';
-import { useFonts } from 'expo-font';
-import { SplashScreen, Stack } from 'expo-router';
-import { useCallback } from 'react';
-import { View } from 'react-native';
+import { Provider } from '@nx-expo-next-tamagui/app/provider'
+import { useFonts } from 'expo-font'
+import { Stack } from 'expo-router'
+import * as SplashScreen from 'expo-splash-screen'
+import { useCallback } from 'react'
+import { View } from 'react-native'
 
 export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: '(tabs)',
-};
+	// Ensure that reloading on `/modal` keeps a back button present.
+	initialRouteName: '(tabs)',
+}
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
+SplashScreen.preventAutoHideAsync()
+	.then(result =>
+		console.log(`SplashScreen.preventAutoHideAsync() succeeded: ${result}`),
+	)
+	.catch(console.warn)
 
 export default function RootLayout() {
-  return <RootLayoutNav />;
+	return <RootLayoutNav />
 }
 
 function RootLayoutNav() {
-  const [fontLoaded] = useFonts({
-    Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
-    InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
-  });
+	const [fontLoaded] = useFonts({
+		Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
+		InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
+	})
 
-  const onLayoutRootView = useCallback(async () => {
-    if (fontLoaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [fontLoaded]);
+	const onLayoutRootView = useCallback(async () => {
+		if (fontLoaded) {
+			SplashScreen.hideAsync()
+		}
+	}, [fontLoaded])
 
-  if (!fontLoaded) {
-    return null;
-  }
+	if (!fontLoaded) {
+		return null
+	}
 
-  return (
-    <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
-      <Provider>
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-        </Stack>
-      </Provider>
-    </View>
-  );
+	return (
+		<View style={{ flex: 1 }} onLayout={onLayoutRootView}>
+			<Provider>
+				<Stack>
+					<Stack.Screen name='(tabs)' options={{ headerShown: false }} />
+					<Stack.Screen name='modal' options={{ presentation: 'modal' }} />
+				</Stack>
+			</Provider>
+		</View>
+	)
 }
