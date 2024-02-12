@@ -41,26 +41,6 @@
         "platform": "android"
       }
     },
-    "run-web-1": {
-      "executor": "nx:run-script",
-      "options": {
-        "script": "web"
-      }
-    },
-    "run-web-2": {
-      "executor": "nx:run-commands",
-      "options": {
-        "cwd": "apps/expo",
-        "command": "yarn expo-cli start --web"
-      }
-    },
-    "run-web-3": {
-      "executor": "nx:run-commands",
-      "options": {
-        "cwd": "apps/expo",
-        "command": "npx expo-cli start --web"
-      }
-    },
     "build": {
       "executor": "@nx/expo:build",
       "options": {}
