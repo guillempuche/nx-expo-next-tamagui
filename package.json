@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
-  "scripts": {
-    "start": "cd ./apps/expo && expo start --web"
-  },
   "workspaces": [
     "packages/*"
   ],

@@ -4,8 +4,6 @@
   "private": true,
   "main": "expo-router/entry",
   "scripts": {
-    "old_web": "expo-cli start --web",
-    "web": "expo start --web",
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . packages/expo && cp yarn.lock packages/expo",
     "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . packages/expo"
   },
