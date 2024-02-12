@@ -1,0 +1,53 @@
+{
+  "migrations": [
+    {
+      "cli": "nx",
+      "version": "18.0.0-beta.2",
+      "description": "Updates .env to disabled adding plugins when generating projects in an existing Nx workspace",
+      "implementation": "./src/migrations/update-18-0-0/disable-crystal-for-existing-workspaces",
+      "x-repair-skip": true,
+      "package": "nx",
+      "name": "18.0.0-disable-adding-plugins-for-existing-workspaces"
+    },
+    {
+      "cli": "nx",
+      "version": "18.0.0-beta.0",
+      "description": "Add NX_MF_DEV_SERVER_STATIC_REMOTES to inputs for task hashing when '@nx/webpack:webpack' is used for Module Federation.",
+      "factory": "./src/migrations/update-18-0-0/add-mf-env-var-to-target-defaults",
+      "package": "@nx/react",
+      "name": "add-module-federation-env-var-to-target-defaults"
+    },
+    {
+      "cli": "nx",
+      "version": "18.0.0-beta.0",
+      "description": "Remove blockList in metro.config.js",
+      "implementation": "./src/migrations/update-18-0-0/remove-block-list",
+      "package": "@nx/expo",
+      "name": "update-18-0-0-remove-block-list"
+    },
+    {
+      "cli": "nx",
+      "version": "18.0.0-beta.0",
+      "description": "Remove symlink target in project.json",
+      "implementation": "./src/migrations/update-18-0-0/remove-symlink-target",
+      "package": "@nx/expo",
+      "name": "update-18-0-0-remove-symlink-target"
+    },
+    {
+      "cli": "nx",
+      "version": "18.0.0-beta.0",
+      "description": "Remove eas-cli from package.json",
+      "implementation": "./src/migrations/update-18-0-0/remove-eas-cli",
+      "package": "@nx/expo",
+      "name": "update-18-0-0-remove-eas-cli"
+    },
+    {
+      "cli": "nx",
+      "version": "18.0.0-beta.0",
+      "description": "Remove the offset from the outputDir of the export target",
+      "implementation": "./src/migrations/update-18-0-0/change-outputDir-export-target",
+      "package": "@nx/expo",
+      "name": "update-18-0-0-remove-offset-export-outputDir"
+    }
+  ]
+}

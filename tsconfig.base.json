@@ -1,40 +1,43 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@nx-expo-next-tamagui/app/benefits": [
-        "packages/app/benefits/src/index.ts"
-      ],
-      "@nx-expo-next-tamagui/app/provider": [
-        "packages/app/provider/src/index.tsx"
-      ],
-      "@nx-expo-next-tamagui/app/resources": [
-        "packages/app/resources/src/index.ts"
-      ],
-      "@nx-expo-next-tamagui/app/welcome": [
-        "packages/app/welcome/src/index.ts"
-      ],
-      "@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"]
-    },
-    "plugins": [
-      {
-        "name": "@nderscore/tamagui-typescript-plugin",
-        "pathToApp": "apps/next"
-      }
-    ]
-  },
-  "exclude": ["node_modules", "tmp"]
+	"compileOnSave": false,
+	"compilerOptions": {
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"strict": true,
+		"target": "ES2022",
+		"module": "ES2022",
+		"lib": ["ES2022", "dom"],
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"rootDir": ".",
+		"baseUrl": ".",
+		"paths": {
+			"@nx-expo-next-tamagui/expo": ["apps/expo/src/index.ts"],
+			"@nx-expo-next-tamagui/app/benefits": [
+				"packages/app/benefits/src/index.ts"
+			],
+			"@nx-expo-next-tamagui/app/provider": [
+				"packages/app/provider/src/index.tsx"
+			],
+			"@nx-expo-next-tamagui/app/resources": [
+				"packages/app/resources/src/index.ts"
+			],
+			"@nx-expo-next-tamagui/app/welcome": [
+				"packages/app/welcome/src/index.ts"
+			],
+			"@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"]
+		},
+		"plugins": [
+			{
+				// IDE autocomplete
+				"name": "@nderscore/tamagui-typescript-plugin",
+				"pathToApp": "apps/next"
+			}
+		]
+	},
+	"exclude": ["node_modules", "tmp"]
 }
