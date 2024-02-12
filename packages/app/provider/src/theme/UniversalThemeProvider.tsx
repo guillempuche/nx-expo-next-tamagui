@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 
-// It's handled on _app.tsx
 export const UniversalThemeProvider = ({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) => {
-  return <>{children}</>;
+	return <>{children}</>;
 };
 
-export { useRootTheme, useThemeSetting } from '@tamagui/next-theme';
+export { useRootTheme, useThemeSetting } from "@tamagui/next-theme";

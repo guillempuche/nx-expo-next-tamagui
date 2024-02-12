@@ -1,5 +1,5 @@
 {
-  "name": "app/provider",
+  "name": "provider",
   "version": "0.0.1",
   "dependencies": {},
   "main": "./index.js",
