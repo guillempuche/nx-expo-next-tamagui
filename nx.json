@@ -40,22 +40,12 @@
       "packages/*"
     ],
     "changelog": {
+      "version": {
+        "conventionalCommits": true
+      },
       "git": {
         "commit": true,
         "tag": true
-      },
-      "workspaceChangelog": {
-        "createRelease": "github",
-        "renderer": "tools/release/changelog-renderer"
-      },
-      "projectChangelogs": {
-        "renderer": "tools/release/changelog-renderer"
-      }
-    },
-    "version": {
-      "generatorOptions": {
-        "currentVersionResolver": "git-tag",
-        "specifierSource": "conventional-commits"
       }
     }
   },
