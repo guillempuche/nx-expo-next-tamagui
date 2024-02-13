@@ -6,7 +6,7 @@ export const palettes = (() => {
 	const darkTransparent = 'rgba(10,10,10,0)'
 
 	const transparent = (hsl: string, opacity = 0) =>
-		hsl.replace(`%)`, `%, ${opacity})`).replace(`hsl(`, `hsla(`)
+		hsl.replace('%)', `%, ${opacity})`).replace('hsl(', 'hsla(')
 
 	// const getColorPalette = (colors: object, color = colors[0]): string[] => {
 	const getColorPalette = (colors: object, color = '#000'): string[] => {

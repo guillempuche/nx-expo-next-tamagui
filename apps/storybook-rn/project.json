@@ -1,0 +1,8 @@
+{
+	"name": "storybook-rn",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/storybook-rn/src",
+	"projectType": "application",
+	"targets": {},
+	"tags": []
+}
