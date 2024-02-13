@@ -12,8 +12,7 @@
 		"indentStyle": "tab",
 		"indentWidth": 2,
 		"lineWidth": 80,
-		"lineEnding": "lf",
-		"ignore": ["/dist", "/coverage", "/.nx/cache"]
+		"lineEnding": "lf"
 	},
 	"javascript": {
 		"formatter": {
@@ -27,5 +26,18 @@
 		"parser": {
 			"allowComments": true
 		}
+	},
+	"files": {
+		"ignore": [
+			".expo",
+			".nx/**/*",
+			".next",
+			".tamagui",
+			".yarn/*",
+			"/coverage",
+			"dist",
+			"node_modules"
+		],
+		"ignoreUnknown": true
 	}
 }
