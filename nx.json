@@ -1,4 +1,9 @@
 {
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": true
+    }
+  },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "extends": "nx/presets/npm.json",
   "targetDefaults": {
@@ -39,14 +44,8 @@
     "projects": [
       "packages/*"
     ],
-    "changelog": {
-      "version": {
-        "conventionalCommits": true
-      },
-      "git": {
-        "commit": true,
-        "tag": true
-      }
+    "version": {
+      "conventionalCommits": true
     }
   },
   "generators": {
@@ -65,14 +64,43 @@
       }
     }
   },
-  "pluginsConfig": {
-    "@nx/js": {
-      "analyzeSourceFiles": true
-    }
-  },
   "cli": {
     "packageManager": "yarn",
     "analytics": false
   },
-  "nxCloudAccessToken": "OGU0ZjFkNjYtOTJhZC00YWU0LWFlZWMtMzRmMjljZmY3ZDRmfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "OGU0ZjFkNjYtOTJhZC00YWU0LWFlZWMtMzRmMjljZmY3ZDRmfHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/expo/plugin",
+      "options": {
+        "startTargetName": "start",
+        "serveTargetName": "serve",
+        "runIosTargetName": "run-ios",
+        "runAndroidTargetName": "run-android",
+        "exportTargetName": "export",
+        "prebuildTargetName": "prebuild",
+        "installTargetName": "install",
+        "buildTargetName": "build",
+        "submitTargetName": "submit"
+      }
+    },
+    {
+      "plugin": "@nx/storybook/plugin",
+      "options": {
+        "buildStorybookTargetName": "build-storybook",
+        "serveStorybookTargetName": "storybook",
+        "testStorybookTargetName": "test-storybook",
+        "staticStorybookTargetName": "static-storybook"
+      }
+    }
+  ],
+  "tasksRunnerOptions": {
+    "default": {
+      "options": {
+        "cacheableOperations": [
+          "build-storybook"
+        ]
+      }
+    }
+  }
 }

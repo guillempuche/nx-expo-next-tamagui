@@ -8,6 +8,16 @@ tmp
 # dependencies
 node_modules
 
+# package manager
+.yarn/*
+yarn-error.log
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 # IDEs and editors
 /.idea
 .project
@@ -29,8 +39,6 @@ node_modules
 /connect.lock
 /coverage
 /libpeerconnection.log
-npm-debug.log
-yarn-error.log
 testem.log
 /typings
 
@@ -43,12 +51,8 @@ Thumbs.db
 # Next.js
 .next
 
-# Expo
-node_modules/
 .expo/
-.yarn/
 dist/
-npm-debug.*
 *.jks
 *.p8
 *.p12
@@ -57,3 +61,5 @@ npm-debug.*
 *.orig.*
 web-build/
 cache/
+
+storybook-static
