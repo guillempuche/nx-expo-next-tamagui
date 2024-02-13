@@ -1,5 +1,5 @@
 {
   "*": [
-    "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
+    "biome check --apply --no-errors-on-unmatched ."
   ]
 }
