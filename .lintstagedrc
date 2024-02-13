@@ -1,0 +1,5 @@
+{
+  "*.{ts,mts,cts,tsx,js,mjs,cjs,jsx,json,md,mdx,css}": [
+    "biome check --apply ."
+  ]
+}

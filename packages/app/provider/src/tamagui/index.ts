@@ -1,1 +1,1 @@
-export * from './TamaguiProvider';
+export * from './TamaguiProvider'

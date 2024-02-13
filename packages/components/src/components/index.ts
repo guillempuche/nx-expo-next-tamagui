@@ -1,2 +1,2 @@
-export * from './Link';
-export * from './SimpleCard';
+export * from './Link'
+export * from './SimpleCard'

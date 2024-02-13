@@ -1,20 +1,16 @@
 {
-  "name": "benefits",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/app/benefits/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
-      "options": {
-        "lintFilePatterns": [
-          "packages/app/benefits/**/*.{ts,tsx,js,jsx}"
-        ]
-      }
-    }
-  }
+	"name": "benefits",
+	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "packages/app/benefits/src",
+	"projectType": "library",
+	"tags": [],
+	"targets": {
+		"lint": {
+			"executor": "@nx/eslint:lint",
+			"outputs": ["{options.outputFile}"],
+			"options": {
+				"lintFilePatterns": ["packages/app/benefits/**/*.{ts,tsx,js,jsx}"]
+			}
+		}
+	}
 }

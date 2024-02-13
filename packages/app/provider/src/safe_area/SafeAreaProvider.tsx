@@ -1,5 +1,5 @@
 export const SafeAreaProvider = ({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
-}) => <>{children}</>;
+	children: React.ReactNode
+}) => <>{children}</>

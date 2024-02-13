@@ -1,1 +1,1 @@
-export * from './UniversalThemeProvider';
+export * from './UniversalThemeProvider'

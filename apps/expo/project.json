@@ -1,110 +1,91 @@
 {
-  "name": "expo",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/expo/src",
-  "projectType": "application",
-  "targets": {
-    "start": {
-      "executor": "@nx/expo:start",
-      "dependsOn": [
-        "ensure-symlink",
-        "sync-deps"
-      ],
-      "options": {
-        "port": 8081,
-        "clear": true
-      }
-    },
-    "serve": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "nx start expo"
-      }
-    },
-    "run-ios": {
-      "executor": "@nx/expo:run",
-      "dependsOn": [
-        "ensure-symlink",
-        "sync-deps"
-      ],
-      "options": {
-        "platform": "ios"
-      }
-    },
-    "run-android": {
-      "executor": "@nx/expo:run",
-      "dependsOn": [
-        "ensure-symlink",
-        "sync-deps"
-      ],
-      "options": {
-        "platform": "android"
-      }
-    },
-    "build": {
-      "executor": "@nx/expo:build",
-      "options": {}
-    },
-    "submit": {
-      "executor": "@nx/expo:submit",
-      "options": {}
-    },
-    "build-list": {
-      "executor": "@nx/expo:build-list",
-      "options": {}
-    },
-    "sync-deps": {
-      "executor": "@nx/expo:sync-deps",
-      "options": {}
-    },
-    "ensure-symlink": {
-      "executor": "@nx/expo:ensure-symlink",
-      "options": {}
-    },
-    "prebuild": {
-      "executor": "@nx/expo:prebuild",
-      "dependsOn": [
-        "ensure-symlink",
-        "sync-deps"
-      ],
-      "options": {}
-    },
-    "install": {
-      "executor": "@nx/expo:install",
-      "options": {}
-    },
-    "update": {
-      "executor": "@nx/expo:update",
-      "options": {}
-    },
-    "export": {
-      "executor": "@nx/expo:export",
-      "dependsOn": [
-        "ensure-symlink",
-        "sync-deps"
-      ],
-      "options": {
-        "platform": "all",
-        "outputDir": "../../dist/apps/apps"
-      }
-    },
-    "export-web": {
-      "executor": "@nx/expo:export",
-      "options": {
-        "bundler": "metro"
-      }
-    },
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
-      "options": {
-        "lintFilePatterns": [
-          "apps/apps/**/*.{ts,tsx,js,jsx}"
-        ]
-      }
-    }
-  },
-  "tags": []
+	"name": "expo",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/expo/src",
+	"projectType": "application",
+	"targets": {
+		"start": {
+			"executor": "@nx/expo:start",
+			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"options": {
+				"port": 8081,
+				"clear": true
+			}
+		},
+		"serve": {
+			"executor": "nx:run-commands",
+			"options": {
+				"command": "nx start expo"
+			}
+		},
+		"run-ios": {
+			"executor": "@nx/expo:run",
+			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"options": {
+				"platform": "ios"
+			}
+		},
+		"run-android": {
+			"executor": "@nx/expo:run",
+			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"options": {
+				"platform": "android"
+			}
+		},
+		"build": {
+			"executor": "@nx/expo:build",
+			"options": {}
+		},
+		"submit": {
+			"executor": "@nx/expo:submit",
+			"options": {}
+		},
+		"build-list": {
+			"executor": "@nx/expo:build-list",
+			"options": {}
+		},
+		"sync-deps": {
+			"executor": "@nx/expo:sync-deps",
+			"options": {}
+		},
+		"ensure-symlink": {
+			"executor": "@nx/expo:ensure-symlink",
+			"options": {}
+		},
+		"prebuild": {
+			"executor": "@nx/expo:prebuild",
+			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"options": {}
+		},
+		"install": {
+			"executor": "@nx/expo:install",
+			"options": {}
+		},
+		"update": {
+			"executor": "@nx/expo:update",
+			"options": {}
+		},
+		"export": {
+			"executor": "@nx/expo:export",
+			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"options": {
+				"platform": "all",
+				"outputDir": "../../dist/apps/apps"
+			}
+		},
+		"export-web": {
+			"executor": "@nx/expo:export",
+			"options": {
+				"bundler": "metro"
+			}
+		},
+		"lint": {
+			"executor": "@nx/eslint:lint",
+			"outputs": ["{options.outputFile}"],
+			"options": {
+				"lintFilePatterns": ["apps/apps/**/*.{ts,tsx,js,jsx}"]
+			}
+		}
+	},
+	"tags": []
 }

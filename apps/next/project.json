@@ -1,54 +1,54 @@
 {
-  "name": "next",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/next",
-  "projectType": "application",
-  "targets": {
-    "build": {
-      "executor": "@nx/next:build",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "outputPath": "dist/apps/next"
-      },
-      "configurations": {
-        "development": {
-          "outputPath": "apps/next"
-        },
-        "production": {}
-      }
-    },
-    "serve": {
-      "executor": "@nx/next:server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "next:build",
-        "dev": true
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "next:build:development",
-          "dev": true
-        },
-        "production": {
-          "buildTarget": "next:build:production",
-          "dev": false
-        }
-      }
-    },
-    "export": {
-      "executor": "@nx/next:export",
-      "options": {
-        "buildTarget": "next:build:production"
-      }
-    },
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["apps/next/**/*.{ts,tsx,js,jsx}"]
-      }
-    }
-  },
-  "tags": []
+	"name": "next",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/next",
+	"projectType": "application",
+	"targets": {
+		"build": {
+			"executor": "@nx/next:build",
+			"outputs": ["{options.outputPath}"],
+			"defaultConfiguration": "production",
+			"options": {
+				"outputPath": "dist/apps/next"
+			},
+			"configurations": {
+				"development": {
+					"outputPath": "apps/next"
+				},
+				"production": {}
+			}
+		},
+		"serve": {
+			"executor": "@nx/next:server",
+			"defaultConfiguration": "development",
+			"options": {
+				"buildTarget": "next:build",
+				"dev": true
+			},
+			"configurations": {
+				"development": {
+					"buildTarget": "next:build:development",
+					"dev": true
+				},
+				"production": {
+					"buildTarget": "next:build:production",
+					"dev": false
+				}
+			}
+		},
+		"export": {
+			"executor": "@nx/next:export",
+			"options": {
+				"buildTarget": "next:build:production"
+			}
+		},
+		"lint": {
+			"executor": "@nx/eslint:lint",
+			"outputs": ["{options.outputFile}"],
+			"options": {
+				"lintFilePatterns": ["apps/next/**/*.{ts,tsx,js,jsx}"]
+			}
+		}
+	},
+	"tags": []
 }

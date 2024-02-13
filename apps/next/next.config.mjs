@@ -1,10 +1,10 @@
 //@ts-check
 
-import { composePlugins, withNx } from '@nx/next';
+import { composePlugins, withNx } from '@nx/next'
 
-import tamagui from '@tamagui/next-plugin';
+import tamagui from '@tamagui/next-plugin'
 // Instead of direct import, do this because of '@tamagui/next-plugin' is a CommonJS module.
-const { withTamagui } = tamagui;
+const { withTamagui } = tamagui
 
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
@@ -41,7 +41,7 @@ const nextConfig = {
 		swcTraceProfiling: true,
 		scrollRestoration: true,
 	},
-};
+}
 
 const plugins = [
 	withNx,
@@ -74,6 +74,6 @@ const plugins = [
 		// 	'Modal',
 		// ],
 	}),
-];
+]
 
-export default composePlugins(...plugins)(nextConfig);
+export default composePlugins(...plugins)(nextConfig)

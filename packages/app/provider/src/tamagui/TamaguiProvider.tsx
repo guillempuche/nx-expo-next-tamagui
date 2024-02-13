@@ -1,24 +1,24 @@
-import { TamaguiProvider as TamaguiProviderOG } from '@nx-expo-next-tamagui/components';
-import React from 'react';
+import { TamaguiProvider as TamaguiProviderOG } from '@nx-expo-next-tamagui/components'
+import React from 'react'
 
-import { tamaguiComponentsConfig } from '@nx-expo-next-tamagui/components';
-import { useRootTheme } from '../theme/UniversalThemeProvider';
+import { tamaguiComponentsConfig } from '@nx-expo-next-tamagui/components'
+import { useRootTheme } from '../theme/UniversalThemeProvider'
 
 export const TamaguiProvider = ({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode
 }) => {
-  const [rootTheme] = useRootTheme();
+	const [rootTheme] = useRootTheme()
 
-  return (
-    <TamaguiProviderOG
-      config={tamaguiComponentsConfig}
-      disableInjectCSS
-      disableRootThemeClass
-      defaultTheme={rootTheme}
-    >
-      {children}
-    </TamaguiProviderOG>
-  );
-};
+	return (
+		<TamaguiProviderOG
+			config={tamaguiComponentsConfig}
+			disableInjectCSS
+			disableRootThemeClass
+			defaultTheme={rootTheme}
+		>
+			{children}
+		</TamaguiProviderOG>
+	)
+}

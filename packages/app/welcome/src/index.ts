@@ -1,2 +1,2 @@
-export * from './layout.web';
-export * from './screen';
+export * from './layout.web'
+export * from './screen'

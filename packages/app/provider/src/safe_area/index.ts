@@ -1,1 +1,1 @@
-export * from './SafeAreaProvider';
+export * from './SafeAreaProvider'

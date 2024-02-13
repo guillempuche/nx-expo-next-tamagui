@@ -1,0 +1,8 @@
+# This script is runned by Husky when doing a `git commit -m "your message"`.
+# If the script succeeds, it allows to commit.
+
+#!/usr/bin/env sh
+
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn pre-commit
