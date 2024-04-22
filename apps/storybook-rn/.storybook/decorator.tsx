@@ -4,7 +4,7 @@ import {
 	YStack,
 	tamaguiComponentsConfig,
 } from '@nx-expo-next-tamagui/components'
-import { Decorator } from '@storybook/react'
+import type { Decorator } from '@storybook/react'
 // import { ToastProvider } from 'app/provider/toast'
 
 export const StorybookDecorator: Decorator = (Story, args) => {

@@ -43,10 +43,18 @@
 	"generators": {
 		"@nx/react": {
 			"application": {
-				"babel": true
+				"babel": true,
+				"style": "none",
+				"linter": "none",
+				"bundler": "vite"
 			},
 			"library": {
+				"style": "none",
+				"linter": "none",
 				"unitTestRunner": "none"
+			},
+			"component": {
+				"style": "none"
 			}
 		},
 		"@nx/next": {
@@ -60,7 +68,6 @@
 		"packageManager": "yarn",
 		"analytics": false
 	},
-	"nxCloudAccessToken": "OGU0ZjFkNjYtOTJhZC00YWU0LWFlZWMtMzRmMjljZmY3ZDRmfHJlYWQtd3JpdGU=",
 	"plugins": [
 		{
 			"plugin": "@nx/expo/plugin",
@@ -83,6 +90,16 @@
 				"serveStorybookTargetName": "storybook",
 				"testStorybookTargetName": "test-storybook",
 				"staticStorybookTargetName": "static-storybook"
+			}
+		},
+		{
+			"plugin": "@nx/vite/plugin",
+			"options": {
+				"buildTargetName": "build",
+				"testTargetName": "test",
+				"serveTargetName": "serve",
+				"previewTargetName": "preview",
+				"serveStaticTargetName": "serve-static"
 			}
 		}
 	],

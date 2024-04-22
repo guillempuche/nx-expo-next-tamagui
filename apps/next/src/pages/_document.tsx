@@ -1,6 +1,6 @@
 import NextDocument, {
-	DocumentContext,
-	DocumentInitialProps,
+	type DocumentContext,
+	type DocumentInitialProps,
 	Head,
 	Html,
 	Main,

@@ -2,13 +2,13 @@
 import { Provider } from '@nx-expo-next-tamagui/app/provider'
 import '@tamagui/core/reset.css'
 import {
-	ColorScheme,
+	type ColorScheme,
 	NextThemeProvider,
 	useRootTheme,
 } from '@tamagui/next-theme'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
-import { ReactElement, ReactNode } from 'react'
+import type { ReactElement, ReactNode } from 'react'
 import type { SolitoAppProps } from 'solito'
 
 export default function App({ Component, pageProps }: SolitoAppProps) {

@@ -1,7 +1,7 @@
 import { WelcomeScreen } from '@nx-expo-next-tamagui/app/welcome'
 import { WelcomeLayout } from '@nx-expo-next-tamagui/app/welcome'
 import Head from 'next/head'
-import { NextPageWithLayout } from './_app'
+import type { NextPageWithLayout } from './_app'
 
 export const Page: NextPageWithLayout = () => {
 	return (

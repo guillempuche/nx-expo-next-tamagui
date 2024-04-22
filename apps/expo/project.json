@@ -12,10 +12,10 @@
 				"clear": true
 			}
 		},
-		"serve": {
-			"executor": "nx:run-commands",
+		"web": {
+			"executor": "@nx/expo:serve",
 			"options": {
-				"command": "nx start expo"
+				"port": 8081
 			}
 		},
 		"run-ios": {

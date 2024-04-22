@@ -5,8 +5,8 @@
  * It will copy the dependencies and devDependencies from the workspace package.json to project's package.json.
  * This is needed because EAS Build does the install in project's directory and not workspace's directory.
  */
-import { readFileSync, writeFileSync } from 'fs'
-import { join } from 'path'
+import { readFileSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 const [workspaceRoot, projectRoot] = process.argv.slice(2)
 if (!workspaceRoot) {
