@@ -1,4 +1,4 @@
-# Template as a monorepo: Nx, Expo React Native, NextJS, Tamagui & Solito
+# Template as a monorepo: Nx, Expo React Native, NextJS, React Vite, Tamagui & Solito
 
 The utopia is to code once and have a native app and a native website.
 
@@ -10,7 +10,7 @@ We can be close to that heaven. If we go deep into Typescript & React ecosystem,
 - App and web navigation: [Expo Router](https://docs.expo.dev/routing) and [Solito](https://solito.dev/)
 - Cross theme for web (CSS) and mobile with [Tamagui](https://tamagui.dev)
 
-## Setup the repo
+## Install and run the app and web
 
 - Test it with NodeJS v18. You can use [NVM](https://github.com/nvm-sh/nvm) (Node Version Manager) or [fnm](https://github.com/Schniz/fnm) to manage multiple Node versions.
 - Install `yarn` and enable the latest version with running this command `yarn set version berry`. You can use `npm` easily, just delete:
@@ -20,12 +20,14 @@ We can be close to that heaven. If we go deep into Typescript & React ecosystem,
 
 > Don't consider this character `@`, we don't replace or migrate it.
 
-- Install the dependencies with `yarn add`.
-- Set up Android and iOS environment. Guide at React Native [docs](https://reactnative.dev/docs/getting-started). My current Android setup is for Android API 34.
-- Run Android emulator. Check your local emulators with `emulator -list-avds`, then run it (e.g. `emulator -avd Resizable_API_34`).
-- Run app and web:
+- Install all the dependencies with `yarn install`.
+- For mobile
+  - Set up Android and iOS environment. Guide at React Native [docs](https://reactnative.dev/docs/getting-started). My current Android setup is for Android API 34.
+  - Run Android emulator. Check your local emulators with `emulator -list-avds`, then run it (e.g. `emulator -avd Resizable_API_34`).
   - Run the Expo app found as `expo` (it's the name of the package found in `apps/expo`). You could change the name with Nx console (read the suggestions section below). Run the command `yarn exec nx run expo:start` and open the app according to the terminal commands. You can check what are the commands run by Nx on `apps/expo/project.json` file --> section `targets` --> `start`.
-  - Run the NextJS web found as `next`
+- For web:
+  - Run the NextJS web with `yarn exec nx run next:serve`
+  - Run the Vite React web with `yarn exec nx run web-react:serve`
 
 ## Suggestions
 
@@ -100,7 +102,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 ## To Do
 
 - Replecate Expo app in Next app.
-- Create Storybook
+- Add the EAS build configuration for the Expo app.
+- Create Storybook.
 
 ## Resources
 
