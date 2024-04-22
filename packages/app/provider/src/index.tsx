@@ -1,4 +1,4 @@
-import React from 'react'
+import type React from 'react'
 import { SafeAreaProvider } from './safe_area'
 import { TamaguiProvider } from './tamagui'
 import { UniversalThemeProvider } from './theme'

@@ -4,7 +4,7 @@ import {
 	DefaultTheme,
 	ThemeProvider,
 } from '@react-navigation/native'
-import {
+import type {
 	ThemeProviderProps,
 	useThemeSetting as next_useThemeSetting,
 } from '@tamagui/next-theme'
@@ -17,7 +17,7 @@ import {
 	useMemo,
 	useState,
 } from 'react'
-import { AppState, ColorSchemeName, useColorScheme } from 'react-native'
+import { AppState, type ColorSchemeName, useColorScheme } from 'react-native'
 export const ThemeContext = createContext<
 	(ThemeProviderProps & { current?: string | null }) | null
 >(null)

@@ -1,5 +1,5 @@
 import { TamaguiProvider as TamaguiProviderOG } from '@nx-expo-next-tamagui/components'
-import React from 'react'
+import type React from 'react'
 
 import { tamaguiComponentsConfig } from '@nx-expo-next-tamagui/components'
 import { useRootTheme } from '../theme/UniversalThemeProvider'

@@ -1,5 +1,5 @@
 import {
-	ITamaguiComponentsConfig,
+	type ITamaguiComponentsConfig,
 	tamaguiComponentsConfig,
 } from '@nx-expo-next-tamagui/components'
 
