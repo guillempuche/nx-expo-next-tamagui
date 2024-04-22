@@ -1,4 +1,4 @@
-import { Variable } from '@tamagui/web'
+import type { Variable } from '@tamagui/web'
 import {
 	blue,
 	blueDark,

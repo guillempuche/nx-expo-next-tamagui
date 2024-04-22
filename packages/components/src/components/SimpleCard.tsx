@@ -3,7 +3,7 @@ import { Link } from 'solito/link'
 import {
 	Button,
 	Card,
-	CardProps,
+	type CardProps,
 	H4,
 	Image,
 	Paragraph,

@@ -1,5 +1,8 @@
-import { Link as SolitoLink, LinkProps as SolitoLinkProps } from 'solito/link'
-import { SizableText, TextProps } from 'tamagui'
+import {
+	Link as SolitoLink,
+	type LinkProps as SolitoLinkProps,
+} from 'solito/link'
+import { SizableText, type TextProps } from 'tamagui'
 
 export type LinkProps = Omit<SolitoLinkProps, 'passHref' | 'as'> &
 	TextProps & {

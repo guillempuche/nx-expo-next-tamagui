@@ -16,7 +16,6 @@
 		"rootDir": ".",
 		"baseUrl": ".",
 		"paths": {
-			"@nx-expo-next-tamagui/expo": ["apps/expo/src/index.ts"],
 			"@nx-expo-next-tamagui/app/benefits": [
 				"packages/app/benefits/src/index.ts"
 			],
@@ -29,11 +28,11 @@
 			"@nx-expo-next-tamagui/app/welcome": [
 				"packages/app/welcome/src/index.ts"
 			],
-			"@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"]
+			"@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"],
+			"@nx-expo-next-tamagui/expo": ["apps/expo/src/index.ts"]
 		},
 		"plugins": [
 			{
-				// IDE autocomplete
 				"name": "@nderscore/tamagui-typescript-plugin",
 				"pathToApp": "apps/next"
 			}
