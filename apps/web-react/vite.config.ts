@@ -1,10 +1,17 @@
+import path from 'node:path'
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin'
 import { tamaguiExtractPlugin, tamaguiPlugin } from '@tamagui/vite-plugin'
 import react from '@vitejs/plugin-react'
 /// <reference types='vitest' />
 import { defineConfig } from 'vite'
 
-import tamaguiComponentsConfig from './src/tamagui.config'
+// import tamaguiComponentsConfig from './src/tamagui.config'
+
+// const monorepoRoot = path.resolve(__dirname, '..', '..')
+// const tamaguiConfigPath = path.resolve(
+// 	monorepoRoot,
+// 	'apps/web-react/src/tamagui.config.ts',
+// )
 
 export default defineConfig(({ mode }) => ({
 	root: __dirname,
@@ -48,6 +55,7 @@ export default defineConfig(({ mode }) => ({
 
 		// For Tamagui
 		tamaguiPlugin({ config: './src/tamagui.config' }),
+		// tamaguiPlugin({ config: tamaguiConfigPath }),
 
 		// Adds the optimizing compiler
 		mode === 'production'
