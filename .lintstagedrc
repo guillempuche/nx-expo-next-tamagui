@@ -1,5 +1,5 @@
 {
   "*": [
-    "biome check --apply --no-errors-on-unmatched ."
+    "biome check --apply --changed --no-errors-on-unmatched ."
   ]
 }
