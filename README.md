@@ -99,6 +99,10 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
 
+## Known Issues
+
+- Next configuration file uses ESM and throws `ERR_UNSUPPORTED_DIR_IMPORT` error in Tamagui. Solution [here](https://github.com/guillempuche/nx-expo-next-tamagui/issues/4)
+
 ## To Do
 
 - Replecate Expo app in Next app.
