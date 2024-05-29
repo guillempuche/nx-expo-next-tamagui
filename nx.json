@@ -9,7 +9,9 @@
 	"targetDefaults": {
 		"build": {
 			"cache": true,
-			"dependsOn": ["^build"]
+			"dependsOn": [
+				"^build"
+			]
 		},
 		"lint": {
 			"cache": true,
@@ -22,7 +24,11 @@
 		},
 		"@nx/jest:jest": {
 			"cache": true,
-			"inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"],
+			"inputs": [
+				"default",
+				"^default",
+				"{workspaceRoot}/jest.preset.js"
+			],
 			"options": {
 				"passWithNoTests": true
 			},
@@ -35,7 +41,9 @@
 		}
 	},
 	"release": {
-		"projects": ["packages/*"],
+		"projects": [
+			"packages/*"
+		],
 		"version": {
 			"conventionalCommits": true
 		}
@@ -84,15 +92,6 @@
 			}
 		},
 		{
-			"plugin": "@nx/storybook/plugin",
-			"options": {
-				"buildStorybookTargetName": "build-storybook",
-				"serveStorybookTargetName": "storybook",
-				"testStorybookTargetName": "test-storybook",
-				"staticStorybookTargetName": "static-storybook"
-			}
-		},
-		{
 			"plugin": "@nx/vite/plugin",
 			"options": {
 				"buildTargetName": "build",
@@ -106,7 +105,9 @@
 	"tasksRunnerOptions": {
 		"default": {
 			"options": {
-				"cacheableOperations": ["build-storybook"]
+				"cacheableOperations": [
+					"build-storybook"
+				]
 			}
 		}
 	}

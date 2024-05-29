@@ -105,9 +105,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 ## To Do
 
-- Replecate Expo app in Next app.
 - Add the EAS build configuration for the Expo app.
 - Create Storybook.
+- Replecate Expo app in Next and Vite app.
 
 ## Resources
 
