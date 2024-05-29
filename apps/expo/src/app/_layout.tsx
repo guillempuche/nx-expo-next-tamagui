@@ -4,7 +4,7 @@ import * as SplashScreen from 'expo-splash-screen'
 import { useCallback } from 'react'
 import { View } from 'react-native'
 
-import { Provider } from '@nx-expo-next-tamagui/app/provider'
+import { Provider } from '@nx-expo-next-tamagui/pages/provider'
 
 export const unstable_settings = {
 	// Ensure that reloading on `/modal` keeps a back button present.

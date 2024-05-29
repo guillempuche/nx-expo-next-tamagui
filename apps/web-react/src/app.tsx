@@ -1,9 +1,9 @@
 import { Link, Navigate, Route, Routes } from 'react-router-dom'
 
-import { BenefitsScreen } from '@nx-expo-next-tamagui/app/benefits'
-import { Provider } from '@nx-expo-next-tamagui/app/provider'
-import { WelcomeScreen } from '@nx-expo-next-tamagui/app/welcome'
 import { Button, XStack, YStack } from '@nx-expo-next-tamagui/components'
+import { BenefitsScreen } from '@nx-expo-next-tamagui/pages/benefits'
+import { Provider } from '@nx-expo-next-tamagui/pages/provider'
+import { WelcomeScreen } from '@nx-expo-next-tamagui/pages/welcome'
 
 const NavBar = () => (
 	<XStack tag='nav' padding='$4' bt='1px solid $borderColor'>

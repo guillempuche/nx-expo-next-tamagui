@@ -1,5 +1,5 @@
 // Reset to get more consistent styles across browsers. More on https://tamagui.dev/docs/guides/next-js#pages_apptsx.
-import { Provider } from '@nx-expo-next-tamagui/app/provider'
+import { Provider } from '@nx-expo-next-tamagui/pages/provider'
 import '@tamagui/core/reset.css'
 import {
 	type ColorScheme,

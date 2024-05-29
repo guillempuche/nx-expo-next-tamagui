@@ -1,4 +1,4 @@
-import { ResourcesScreen } from '@nx-expo-next-tamagui/app/resources'
+import { ResourcesScreen } from '@nx-expo-next-tamagui/pages/resources'
 import { StatusBar } from 'expo-status-bar'
 import { Platform } from 'react-native'
 import { View } from 'tamagui'

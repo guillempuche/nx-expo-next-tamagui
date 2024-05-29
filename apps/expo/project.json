@@ -6,7 +6,10 @@
 	"targets": {
 		"start": {
 			"executor": "@nx/expo:start",
-			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"dependsOn": [
+				"ensure-symlink",
+				"sync-deps"
+			],
 			"options": {
 				"port": 8081,
 				"clear": true
@@ -15,19 +18,25 @@
 		"web": {
 			"executor": "@nx/expo:serve",
 			"options": {
-				"port": 8081
+				"port": 8082
 			}
 		},
 		"run-ios": {
 			"executor": "@nx/expo:run",
-			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"dependsOn": [
+				"ensure-symlink",
+				"sync-deps"
+			],
 			"options": {
 				"platform": "ios"
 			}
 		},
 		"run-android": {
 			"executor": "@nx/expo:run",
-			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"dependsOn": [
+				"ensure-symlink",
+				"sync-deps"
+			],
 			"options": {
 				"platform": "android"
 			}
@@ -54,7 +63,10 @@
 		},
 		"prebuild": {
 			"executor": "@nx/expo:prebuild",
-			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"dependsOn": [
+				"ensure-symlink",
+				"sync-deps"
+			],
 			"options": {}
 		},
 		"install": {
@@ -67,7 +79,10 @@
 		},
 		"export": {
 			"executor": "@nx/expo:export",
-			"dependsOn": ["ensure-symlink", "sync-deps"],
+			"dependsOn": [
+				"ensure-symlink",
+				"sync-deps"
+			],
 			"options": {
 				"platform": "all",
 				"outputDir": "../../dist/apps/apps"
@@ -77,13 +92,6 @@
 			"executor": "@nx/expo:export",
 			"options": {
 				"bundler": "metro"
-			}
-		},
-		"lint": {
-			"executor": "@nx/eslint:lint",
-			"outputs": ["{options.outputFile}"],
-			"options": {
-				"lintFilePatterns": ["apps/apps/**/*.{ts,tsx,js,jsx}"]
 			}
 		}
 	},

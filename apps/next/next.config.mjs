@@ -24,10 +24,10 @@ const nextConfig = {
 		'expo-web-browser',
 		'react-native-gesture-handler',
 		'@nx-expo-next-tamagui/components',
-		'@nx-expo-next-tamagui/app/provider',
-		'@nx-expo-next-tamagui/app/benefits',
-		'@nx-expo-next-tamagui/app/resources',
-		'@nx-expo-next-tamagui/app/welcome',
+		'@nx-expo-next-tamagui/pages/provider',
+		'@nx-expo-next-tamagui/pages/benefits',
+		'@nx-expo-next-tamagui/pages/resources',
+		'@nx-expo-next-tamagui/pages/welcome',
 	],
 	modularizeImports: {
 		'@tamagui/lucide-icons': {

@@ -679,19 +679,19 @@
       }
     },
     {
-      "moduleName": "@nx-expo-next-tamagui/app/provider",
+      "moduleName": "@nx-expo-next-tamagui/pages/provider",
       "nameToInfo": {}
     },
     {
-      "moduleName": "@nx-expo-next-tamagui/app/benefits",
+      "moduleName": "@nx-expo-next-tamagui/pages/benefits",
       "nameToInfo": {}
     },
     {
-      "moduleName": "@nx-expo-next-tamagui/app/resources",
+      "moduleName": "@nx-expo-next-tamagui/pages/resources",
       "nameToInfo": {}
     },
     {
-      "moduleName": "@nx-expo-next-tamagui/app/welcome",
+      "moduleName": "@nx-expo-next-tamagui/pages/welcome",
       "nameToInfo": {}
     },
     {

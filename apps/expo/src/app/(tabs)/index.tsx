@@ -1,4 +1,4 @@
-import { WelcomeScreen } from '@nx-expo-next-tamagui/app/welcome'
+import { WelcomeScreen } from '@nx-expo-next-tamagui/pages/welcome'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function TabOneScreen() {

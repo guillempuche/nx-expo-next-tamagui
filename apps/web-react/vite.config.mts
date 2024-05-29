@@ -1,11 +1,11 @@
-import path from 'node:path'
+// import path from 'node:path'
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin'
 import { tamaguiExtractPlugin, tamaguiPlugin } from '@tamagui/vite-plugin'
 import react from '@vitejs/plugin-react'
 /// <reference types='vitest' />
 import { defineConfig } from 'vite'
 
-// import tamaguiComponentsConfig from './src/tamagui.config'
+// import tamaguiComponentsConfig from './src/tamagui.config.ts'
 
 // const monorepoRoot = path.resolve(__dirname, '..', '..')
 // const tamaguiConfigPath = path.resolve(
@@ -37,12 +37,12 @@ export default defineConfig(({ mode }) => ({
 					[
 						'@tamagui/babel-plugin',
 						{
-							config: './src/tamagui.config.ts',
+							config: './tamagui.config.ts',
 							components: [
-								'@nx-expo-next-tamagui/app/provider',
-								'@nx-expo-next-tamagui/app/benefits',
-								'@nx-expo-next-tamagui/app/resources',
-								'@nx-expo-next-tamagui/app/welcome',
+								'@nx-expo-next-tamagui/pages/provider',
+								'@nx-expo-next-tamagui/pages/benefits',
+								'@nx-expo-next-tamagui/pages/resources',
+								'@nx-expo-next-tamagui/pages/welcome',
 								'@nx-expo-next-tamagui/components',
 								'tamagui',
 							],
@@ -54,12 +54,12 @@ export default defineConfig(({ mode }) => ({
 		}),
 
 		// For Tamagui
-		tamaguiPlugin({ config: './src/tamagui.config' }),
+		tamaguiPlugin({ config: './tamagui.config.ts' }),
 		// tamaguiPlugin({ config: tamaguiConfigPath }),
 
 		// Adds the optimizing compiler
 		mode === 'production'
-			? tamaguiExtractPlugin({ config: './src/tamagui.config' })
+			? tamaguiExtractPlugin({ config: './tamagui.config.ts' })
 			: null,
 	],
 
