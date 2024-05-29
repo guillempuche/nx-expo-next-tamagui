@@ -1,15 +1,19 @@
 {
 	"name": "benefits",
 	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
-	"sourceRoot": "packages/app/benefits/src",
+	"sourceRoot": "packages/pages/benefits/src",
 	"projectType": "library",
 	"tags": [],
 	"targets": {
 		"lint": {
 			"executor": "@nx/eslint:lint",
-			"outputs": ["{options.outputFile}"],
+			"outputs": [
+				"{options.outputFile}"
+			],
 			"options": {
-				"lintFilePatterns": ["packages/app/benefits/**/*.{ts,tsx,js,jsx}"]
+				"lintFilePatterns": [
+					"packages/pages/benefits/**/*.{ts,tsx,js,jsx}"
+				]
 			}
 		}
 	}

@@ -1,15 +1,19 @@
 {
 	"name": "welcome",
 	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
-	"sourceRoot": "packages/app/welcome/src",
+	"sourceRoot": "packages/pages/welcome/src",
 	"projectType": "library",
 	"tags": [],
 	"targets": {
 		"lint": {
 			"executor": "@nx/eslint:lint",
-			"outputs": ["{options.outputFile}"],
+			"outputs": [
+				"{options.outputFile}"
+			],
 			"options": {
-				"lintFilePatterns": ["packages/app/welcome/**/*.{ts,tsx,js,jsx}"]
+				"lintFilePatterns": [
+					"packages/pages/welcome/**/*.{ts,tsx,js,jsx}"
+				]
 			}
 		}
 	}

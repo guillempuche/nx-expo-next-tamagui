@@ -1,15 +1,19 @@
 {
 	"name": "resources",
 	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
-	"sourceRoot": "packages/app/resources/src",
+	"sourceRoot": "packages/pages/resources/src",
 	"projectType": "library",
 	"tags": [],
 	"targets": {
 		"lint": {
 			"executor": "@nx/eslint:lint",
-			"outputs": ["{options.outputFile}"],
+			"outputs": [
+				"{options.outputFile}"
+			],
 			"options": {
-				"lintFilePatterns": ["packages/app/resources/**/*.{ts,tsx,js,jsx}"]
+				"lintFilePatterns": [
+					"packages/pages/resources/**/*.{ts,tsx,js,jsx}"
+				]
 			}
 		}
 	}

@@ -1,14 +1,18 @@
 {
 	"name": "provider",
 	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
-	"sourceRoot": "packages/app/provider/src",
+	"sourceRoot": "packages/pages/provider/src",
 	"projectType": "library",
 	"targets": {
 		"lint": {
 			"executor": "@nx/eslint:lint",
-			"outputs": ["{options.outputFile}"],
+			"outputs": [
+				"{options.outputFile}"
+			],
 			"options": {
-				"lintFilePatterns": ["packages/app/provider/**/*.ts"]
+				"lintFilePatterns": [
+					"packages/pages/provider/**/*.ts"
+				]
 			}
 		}
 	},
