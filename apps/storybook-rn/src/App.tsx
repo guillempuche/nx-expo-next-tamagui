@@ -1,11 +1,10 @@
-// import { view } from './storybook.requires'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import { ThemeProvider } from '@nx-react-native/shared-ui'
+import StorybookUIRoot from '../storybook/storybook'
 
-// const StorybookUIRoot = view.getStorybookUI({
-// 	storage: {
-// 		getItem: AsyncStorage.getItem,
-// 		setItem: AsyncStorage.setItem,
-// 	},
-// })
-
-// export default StorybookUIRoot
+export const App = () => {
+	return (
+		<ThemeProvider>
+			<StorybookUIRoot />
+		</ThemeProvider>
+	)
+}

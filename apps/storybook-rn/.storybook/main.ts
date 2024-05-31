@@ -6,15 +6,6 @@ import type { StorybookConfig } from '@storybook/react-native'
 const config: StorybookConfig = {
 	stories: ['../../../packages/components/**/*.stories.@(ts|tsx|mdx)'],
 	addons: ['@storybook/addon-essentials'],
-
-	// framework: {
-	//   name: '@storybook/react-vite',
-	//   options: {},
-	// },
-	// viteFinal: async (config) =>
-	//   mergeConfig(config, {
-	//     plugins: [nxViteTsPaths()],
-	//   }),
 }
 
 export default config

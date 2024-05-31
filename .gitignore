@@ -62,3 +62,6 @@ web-build/
 cache/
 
 storybook-static
+
+# Environtment variables
+.env

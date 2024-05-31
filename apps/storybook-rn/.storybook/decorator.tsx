@@ -1,9 +1,9 @@
-import { UniversalThemeProvider } from '@nx-expo-next-tamagui/app/provider'
 import {
 	TamaguiProvider,
 	YStack,
 	tamaguiComponentsConfig,
 } from '@nx-expo-next-tamagui/components'
+import { UniversalThemeProvider } from '@nx-expo-next-tamagui/pages/provider'
 import type { Decorator } from '@storybook/react'
 // import { ToastProvider } from 'app/provider/toast'
 

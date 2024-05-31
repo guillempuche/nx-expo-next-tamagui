@@ -1,28 +1,16 @@
 {
 	"build": {
-		"production": {
-			"android": {
-				"buildType": "app-bundle"
-			}
-		},
 		"development": {
 			"developmentClient": true,
-			"distribution": "internal"
-		},
-		"preview": {
 			"distribution": "internal",
 			"ios": {
 				"simulator": true
 			},
-			"android": {
-				"buildType": "apk"
+			"env": {
+				"EAS_OWNER": "guillem-test",
+				"EAS_ID": "cf7be7fd-1ae1-4139-800f-e7e82b872cff"
 			}
-		}
-	},
-	"submit": {
+		},
 		"production": {}
-	},
-	"cli": {
-		"version": ">= 5.2.0"
 	}
 }
