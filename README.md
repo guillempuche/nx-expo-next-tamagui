@@ -1,4 +1,4 @@
-# Template as a monorepo: Nx, Expo React Native, NextJS, React Vite, Tamagui & Solito
+# [WIP for Expo] Template as a monorepo: Nx, Expo React Native, NextJS, React Vite, Tamagui & Solito
 
 The utopia is to code once and have a native app and a native website.
 
@@ -9,6 +9,18 @@ We can be close to that heaven. If we go deep into Typescript & React ecosystem,
 - Web: React with [NextJS](https://nextjs.org/)
 - App and web navigation: [Expo Router](https://docs.expo.dev/routing) and [Solito](https://solito.dev/)
 - Cross theme for web (CSS) and mobile with [Tamagui](https://tamagui.dev)
+
+## Known Issues
+
+- Nx + Expo with Yarn causes problems as pointed at <https://github.com/nrwl/nx/issues/22631>, <https://github.com/nrwl/nx/issues/26257>. **Solution**: use NPM in Nx, else seperate the monorepo from the Expo app like here <https://github.com/guillempuche/nx-monorepo-with-expo-standalone-app>
+- Nx + Expo with NPM is able to run Expo Go app, but not a local build as pointed at <https://github.com/nrwl/nx/issues/26285>. **Solution**: seperate the monorepo from the Expo app like here <https://github.com/guillempuche/nx-monorepo-with-expo-standalone-app>
+- Next configuration file uses ESM and throws `ERR_UNSUPPORTED_DIR_IMPORT` error in Tamagui. Solution [here](https://github.com/guillempuche/nx-expo-next-tamagui/issues/4)
+
+## To Do
+
+- Add the EAS build configuration for the Expo app.
+- Create Storybook.
+- Replecate Expo app in Next and Vite app.
 
 ## Install and run the app and web
 
@@ -98,16 +110,6 @@ export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
-
-## Known Issues
-
-- Next configuration file uses ESM and throws `ERR_UNSUPPORTED_DIR_IMPORT` error in Tamagui. Solution [here](https://github.com/guillempuche/nx-expo-next-tamagui/issues/4)
-
-## To Do
-
-- Add the EAS build configuration for the Expo app.
-- Create Storybook.
-- Replecate Expo app in Next and Vite app.
 
 ## Resources
 
