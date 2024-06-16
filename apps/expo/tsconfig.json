@@ -1,16 +1,16 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "jsx": "react-native",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "declaration": true
-  },
-  "files": [],
-  "include": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    }
-  ]
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"jsx": "react-native",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"declaration": true
+	},
+	"files": [],
+	"include": [],
+	"references": [
+		{
+			"path": "./tsconfig.app.json"
+		}
+	]
 }

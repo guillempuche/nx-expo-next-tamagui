@@ -7,13 +7,9 @@
 	"targets": {
 		"lint": {
 			"executor": "@nx/eslint:lint",
-			"outputs": [
-				"{options.outputFile}"
-			],
+			"outputs": ["{options.outputFile}"],
 			"options": {
-				"lintFilePatterns": [
-					"packages/pages/welcome/**/*.{ts,tsx,js,jsx}"
-				]
+				"lintFilePatterns": ["packages/pages/welcome/**/*.{ts,tsx,js,jsx}"]
 			}
 		}
 	}

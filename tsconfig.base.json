@@ -10,10 +10,7 @@
 		"strict": true,
 		"target": "ES2022",
 		"module": "ES2022",
-		"lib": [
-			"ES2022",
-			"dom"
-		],
+		"lib": ["ES2022", "dom"],
 		"skipLibCheck": true,
 		"skipDefaultLibCheck": true,
 		"rootDir": ".",
@@ -31,12 +28,8 @@
 			"@nx-expo-next-tamagui/pages/welcome": [
 				"packages/pages/welcome/src/index.ts"
 			],
-			"@nx-expo-next-tamagui/components": [
-				"packages/components/src/index.ts"
-			],
-			"@nx-expo-next-tamagui/expo": [
-				"apps/expo/src/index.ts"
-			]
+			"@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"],
+			"@nx-expo-next-tamagui/expo": ["apps/expo/src/index.ts"]
 		},
 		"plugins": [
 			{
@@ -45,8 +38,5 @@
 			}
 		]
 	},
-	"exclude": [
-		"node_modules",
-		"tmp"
-	]
+	"exclude": ["node_modules", "tmp"]
 }
