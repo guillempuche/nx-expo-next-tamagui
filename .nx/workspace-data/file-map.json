@@ -148,64 +148,64 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".lintstagedrc",
-        "hash": "1980056273622172317"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "14445158837882249409"
-      },
-      {
-        "file": "vitest.workspace.ts",
-        "hash": "14272273950443054014"
-      },
-      {
         "file": "package.json",
         "hash": "5001074930184116361"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "17224920745169083029"
-      },
-      {
-        "file": "babel.config.json",
-        "hash": "17819537991671608402"
-      },
-      {
-        "file": ".husky/pre-commit",
-        "hash": "10376800229090195048"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "13086282061287545048"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "9117958914730126860"
-      },
-      {
-        "file": "README.md",
-        "hash": "6775589514834734745"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "7457515489534412895"
-      },
-      {
-        "file": "tools/scripts/eas-build-pre-install.mjs",
-        "hash": "2655811418916069841"
-      },
-      {
-        "file": "biome.json",
-        "hash": "5980404537304430094"
       },
       {
         "file": "nx.json",
         "hash": "16886132157304525815"
       },
       {
+        "file": ".gitignore",
+        "hash": "7457515489534412895"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "2283661510826445092"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "14445158837882249409"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13086282061287545048"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "14272273950443054014"
+      },
+      {
         "file": "tools/scripts/eas-build-post-install.mjs",
         "hash": "3078746538985159257"
+      },
+      {
+        "file": ".lintstagedrc",
+        "hash": "1980056273622172317"
+      },
+      {
+        "file": "README.md",
+        "hash": "6775589514834734745"
+      },
+      {
+        "file": "babel.config.json",
+        "hash": "17819537991671608402"
+      },
+      {
+        "file": "tools/scripts/eas-build-pre-install.mjs",
+        "hash": "2655811418916069841"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "17224920745169083029"
+      },
+      {
+        "file": "biome.json",
+        "hash": "5980404537304430094"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "9117958914730126860"
       }
     ],
     "projectFileMap": {
