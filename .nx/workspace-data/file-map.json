@@ -89,6 +89,7 @@
     "nx": "19.3.0",
     "react-test-renderer": "18.2.0",
     "storybook": "^7.6.10",
+    "syncpack": "^12.3.2",
     "ts-node": "10.9.1",
     "typescript": "^5.4.5",
     "vite": "~5.2.2",
@@ -148,95 +149,252 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "nx.json",
-        "hash": "16886132157304525815"
-      },
-      {
-        "file": ".lintstagedrc",
-        "hash": "1980056273622172317"
-      },
-      {
         "file": ".gitignore",
         "hash": "7457515489534412895"
-      },
-      {
-        "file": "package.json",
-        "hash": "5001074930184116361"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "13086282061287545048"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "2877816215406028415"
-      },
-      {
-        "file": "biome.json",
-        "hash": "5980404537304430094"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "14445158837882249409"
-      },
-      {
-        "file": "README.md",
-        "hash": "6775589514834734745"
       },
       {
         "file": ".husky/pre-commit",
         "hash": "2283661510826445092"
       },
       {
-        "file": "tools/scripts/eas-build-pre-install.mjs",
-        "hash": "2655811418916069841"
+        "file": ".lintstagedrc",
+        "hash": "1980056273622172317"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "2877816215406028415"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13086282061287545048"
+      },
+      {
+        "file": "README.md",
+        "hash": "6775589514834734745"
+      },
+      {
+        "file": "babel.config.json",
+        "hash": "17819537991671608402"
+      },
+      {
+        "file": "biome.json",
+        "hash": "5980404537304430094"
       },
       {
         "file": "migrations.json",
         "hash": "9117958914730126860"
       },
       {
-        "file": "vitest.workspace.ts",
-        "hash": "14272273950443054014"
+        "file": "nx.json",
+        "hash": "16886132157304525815"
       },
       {
         "file": "package-lock.json",
-        "hash": "17224920745169083029"
+        "hash": "1868265384408364625"
+      },
+      {
+        "file": "package.json",
+        "hash": "10650539454888423790"
+      },
+      {
+        "file": "syncpack.config.js",
+        "hash": "11707494639014670989"
       },
       {
         "file": "tools/scripts/eas-build-post-install.mjs",
         "hash": "3078746538985159257"
       },
       {
-        "file": "babel.config.json",
-        "hash": "17819537991671608402"
+        "file": "tools/scripts/eas-build-pre-install.mjs",
+        "hash": "2655811418916069841"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "14445158837882249409"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "14272273950443054014"
       }
     ],
     "projectFileMap": {
-      "expo": [
+      "components": [
         {
-          "file": "apps/expo/.gitignore",
-          "hash": "3244421341483603138"
+          "file": "packages/components/.babelrc",
+          "hash": "78912473898857807"
         },
         {
-          "file": "apps/expo/.tamagui/tamagui.config.json",
-          "hash": "9276515872099238692"
+          "file": "packages/components/project.json",
+          "hash": "6414497715312151050"
         },
         {
-          "file": "apps/expo/app.config.js",
-          "hash": "2201734558414381037"
+          "file": "packages/components/src/components/Link.tsx",
+          "hash": "16098899456470963984",
+          "deps": [
+            "npm:solito",
+            "npm:tamagui"
+          ]
         },
         {
-          "file": "apps/expo/babel.config.js",
-          "hash": "11969485531380702282"
+          "file": "packages/components/src/components/SimpleCard.stories.tsx",
+          "hash": "3861650721332234074",
+          "deps": [
+            "npm:@storybook/react"
+          ]
         },
         {
-          "file": "apps/expo/eas.json",
-          "hash": "1178741450365479478"
+          "file": "packages/components/src/components/SimpleCard.tsx",
+          "hash": "6568377244597625206",
+          "deps": [
+            "npm:react-native",
+            "npm:solito",
+            "npm:tamagui"
+          ]
         },
         {
-          "file": "apps/expo/metro.config.js",
-          "hash": "11236508529860775193",
+          "file": "packages/components/src/components/index.ts",
+          "hash": "7710246510085868370"
+        },
+        {
+          "file": "packages/components/src/index.ts",
+          "hash": "32006121363268421",
+          "deps": [
+            "npm:tamagui"
+          ]
+        },
+        {
+          "file": "packages/components/src/tamagui.config.ts",
+          "hash": "13496236918329529397",
+          "deps": [
+            "npm:@tamagui/config",
+            "npm:@tamagui/shorthands",
+            "npm:@tamagui/themes",
+            "npm:tamagui"
+          ]
+        },
+        {
+          "file": "packages/components/src/themes/colors-default.ts",
+          "hash": "6441909885021789099",
+          "deps": [
+            "npm:@tamagui/themes"
+          ]
+        },
+        {
+          "file": "packages/components/src/themes/colors-neon.ts",
+          "hash": "17117484697037784782"
+        },
+        {
+          "file": "packages/components/src/themes/colors-pastel.ts",
+          "hash": "4612790378661060686"
+        },
+        {
+          "file": "packages/components/src/themes/colors.ts",
+          "hash": "131303888485243076"
+        },
+        {
+          "file": "packages/components/src/themes/fonts.native.ts",
+          "hash": "15990697910402761162",
+          "deps": [
+            "npm:tamagui"
+          ]
+        },
+        {
+          "file": "packages/components/src/themes/fonts.ts",
+          "hash": "18075222972913355330",
+          "deps": [
+            "npm:@tamagui/font-inter"
+          ]
+        },
+        {
+          "file": "packages/components/src/themes/helpers.ts",
+          "hash": "5100298467673741387"
+        },
+        {
+          "file": "packages/components/src/themes/palettes.ts",
+          "hash": "16837118486978815377"
+        },
+        {
+          "file": "packages/components/src/themes/theme-generated.ts",
+          "hash": "230330076959699385"
+        },
+        {
+          "file": "packages/components/src/themes/theme.ts",
+          "hash": "4852093991100305456",
+          "deps": [
+            "npm:@tamagui/theme-builder"
+          ]
+        },
+        {
+          "file": "packages/components/src/themes/token-colors.ts",
+          "hash": "15418014123743239174",
+          "deps": [
+            "npm:@tamagui/web"
+          ]
+        },
+        {
+          "file": "packages/components/src/themes/token-radius.ts",
+          "hash": "2161728818311841456"
+        },
+        {
+          "file": "packages/components/src/themes/token-size.ts",
+          "hash": "3623140453765343735"
+        },
+        {
+          "file": "packages/components/src/themes/token-space.ts",
+          "hash": "3358941131464400065"
+        },
+        {
+          "file": "packages/components/src/themes/token-z-index.ts",
+          "hash": "9760641677503092541"
+        },
+        {
+          "file": "packages/components/tsconfig.json",
+          "hash": "12577759620003451177"
+        },
+        {
+          "file": "packages/components/tsconfig.lib.json",
+          "hash": "7918267111034704404"
+        }
+      ],
+      "storybook-rn": [
+        {
+          "file": "apps/storybook-rn/.storybook/decorator.tsx",
+          "hash": "9543316120320903777",
+          "deps": [
+            "components",
+            "provider",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/storybook-rn/.storybook/index.tsx",
+          "hash": "6175878785613726632",
+          "deps": [
+            "npm:@react-native-async-storage/async-storage"
+          ]
+        },
+        {
+          "file": "apps/storybook-rn/.storybook/main.ts",
+          "hash": "7608974139243832169",
+          "deps": [
+            "npm:@storybook/react-native"
+          ]
+        },
+        {
+          "file": "apps/storybook-rn/.storybook/preview.ts",
+          "hash": "2658863810051757929"
+        },
+        {
+          "file": "apps/storybook-rn/app.config.js",
+          "hash": "11768559118196222180"
+        },
+        {
+          "file": "apps/storybook-rn/babel.config.js",
+          "hash": "3092975944347548212"
+        },
+        {
+          "file": "apps/storybook-rn/metro.config.js",
+          "hash": "16471567664226919550",
           "deps": [
             "npm:@nx/expo",
             "npm:@expo/metro-config",
@@ -245,223 +403,51 @@
           ]
         },
         {
-          "file": "apps/expo/package.json",
-          "hash": "593664605517553973",
+          "file": "apps/storybook-rn/package.json",
+          "hash": "3944248554359160801",
           "deps": [
-            "npm:@biomejs/biome",
-            "npm:@expo/cli",
-            "npm:@expo/metro-runtime",
-            "npm:@nderscore/tamagui-typescript-plugin",
-            "npm:@nx/jest",
-            "npm:@nx/js",
-            "npm:@nx/next",
-            "npm:@nx/react",
-            "npm:@nx/workspace",
-            "npm:@storybook/nextjs",
-            "npm:@swc-node/register",
-            "npm:@swc/core",
-            "npm:@tamagui/babel-plugin",
-            "npm:@tamagui/build",
-            "npm:@tamagui/cli",
-            "npm:@tamagui/next-plugin",
             "npm:@testing-library/jest-native",
-            "npm:@testing-library/react",
             "npm:@testing-library/react-native",
-            "npm:@types/jest",
-            "npm:@types/node",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:babel-preset-expo",
-            "npm:eas-cli",
-            "npm:jest",
-            "npm:jest-environment-node",
-            "npm:next-compose-plugins",
-            "npm:next-transpile-modules",
-            "npm:nx",
-            "npm:typescript",
-            "npm:@nx/react-native",
-            "npm:@nx/expo",
-            "npm:@expo/metro-config",
+            "expo",
             "npm:metro-config",
-            "npm:react-native-svg-transformer",
-            "npm:tamagui",
-            "npm:@storybook/react",
-            "npm:@tamagui/linear-gradient",
-            "npm:@tamagui/shorthands",
-            "npm:@tamagui/themes",
-            "npm:@tamagui/theme-builder",
-            "npm:@tamagui/web",
-            "npm:react",
-            "npm:@tamagui/lucide-icons",
-            "npm:@react-navigation/bottom-tabs",
-            "npm:expo-router",
             "npm:react-native",
-            "npm:@expo/vector-icons",
-            "npm:@react-navigation/native",
-            "npm:expo-status-bar",
-            "npm:solito",
-            "npm:react-test-renderer",
-            "npm:@tamagui/config",
-            "npm:next",
-            "npm:expo-web-browser",
-            "npm:react-native-safe-area-context",
-            "npm:@react-native-async-storage/async-storage",
-            "npm:@tamagui/next-theme",
-            "npm:expo-font",
-            "npm:@tamagui/font-inter",
-            "npm:vite",
-            "npm:@react-native-masked-view/masked-view",
-            "npm:expo-constants",
-            "npm:expo-linear-gradient",
-            "npm:expo-linking",
-            "npm:expo-splash-screen",
-            "npm:react-dom",
-            "npm:react-native-gesture-handler",
-            "npm:react-native-screens",
             "npm:react-native-svg",
-            "npm:react-native-web",
-            "npm:tslib"
+            "npm:react-native-web"
           ]
         },
         {
-          "file": "apps/expo/project.json",
-          "hash": "12649004158491293540"
+          "file": "apps/storybook-rn/project.json",
+          "hash": "9379962466864857183"
         },
         {
-          "file": "apps/expo/src/app/(tabs)/_layout.tsx",
-          "hash": "14646516217860322158",
+          "file": "apps/storybook-rn/src/app.tsx",
+          "hash": "10956431139392761886"
+        },
+        {
+          "file": "apps/storybook-rn/src/main.tsx",
+          "hash": "13427362390503284324",
           "deps": [
-            "npm:@tamagui/lucide-icons",
-            "npm:expo-router",
-            "npm:react-native",
-            "npm:solito"
+            "npm:react-native"
           ]
         },
         {
-          "file": "apps/expo/src/app/(tabs)/index.tsx",
-          "hash": "4823579430690369859",
+          "file": "apps/storybook-rn/src/storybook.ts",
+          "hash": "8489967469552792425",
           "deps": [
-            "welcome",
-            "npm:react-native-safe-area-context"
+            "npm:@storybook/react-native"
           ]
         },
         {
-          "file": "apps/expo/src/app/(tabs)/two.tsx",
-          "hash": "1468599560875611573",
-          "deps": [
-            "benefits",
-            "npm:react-native-safe-area-context"
-          ]
+          "file": "apps/storybook-rn/tsconfig.app.json",
+          "hash": "12161348979748758246"
         },
         {
-          "file": "apps/expo/src/app/+html.tsx",
-          "hash": "17207447831631616251",
-          "deps": [
-            "npm:expo-router"
-          ]
+          "file": "apps/storybook-rn/tsconfig.json",
+          "hash": "12046819120642192556"
         },
         {
-          "file": "apps/expo/src/app/[...missing].tsx",
-          "hash": "4020375200475354812",
-          "deps": [
-            "npm:expo-router",
-            "npm:solito",
-            "npm:tamagui"
-          ]
-        },
-        {
-          "file": "apps/expo/src/app/_layout.tsx",
-          "hash": "10031406163108703625",
-          "deps": [
-            "npm:expo-font",
-            "npm:expo-router",
-            "npm:expo-splash-screen",
-            "npm:react",
-            "npm:react-native",
-            "provider",
-            "npm:@tamagui/font-inter"
-          ]
-        },
-        {
-          "file": "apps/expo/src/app/modal.tsx",
-          "hash": "14541141712319490083",
-          "deps": [
-            "resources",
-            "npm:expo-status-bar",
-            "npm:react-native",
-            "npm:tamagui"
-          ]
-        },
-        {
-          "file": "apps/expo/src/assets/images/adaptive-icon.png",
-          "hash": "16102135492459408350"
-        },
-        {
-          "file": "apps/expo/src/assets/images/favicon.png",
-          "hash": "10556792184362654649"
-        },
-        {
-          "file": "apps/expo/src/assets/images/icon.png",
-          "hash": "14252482080276080187"
-        },
-        {
-          "file": "apps/expo/src/assets/images/splash.png",
-          "hash": "16493559885079032523"
-        },
-        {
-          "file": "apps/expo/tamagui.config.ts",
-          "hash": "863797285285599761",
-          "deps": [
-            "components"
-          ]
-        },
-        {
-          "file": "apps/expo/tsconfig.app.json",
-          "hash": "18405632307808946"
-        },
-        {
-          "file": "apps/expo/tsconfig.json",
-          "hash": "10036263952111864086"
-        }
-      ],
-      "resources": [
-        {
-          "file": "packages/pages/resources/.babelrc",
-          "hash": "78912473898857807"
-        },
-        {
-          "file": "packages/pages/resources/README.md",
-          "hash": "5699554876552323482"
-        },
-        {
-          "file": "packages/pages/resources/project.json",
-          "hash": "18246065849485450627"
-        },
-        {
-          "file": "packages/pages/resources/src/index.ts",
-          "hash": "15456912301111091462"
-        },
-        {
-          "file": "packages/pages/resources/src/screen.tsx",
-          "hash": "5792042192656276121",
-          "deps": [
-            "components"
-          ]
-        },
-        {
-          "file": "packages/pages/resources/src/tamagui.config.ts",
-          "hash": "863797285285599761",
-          "deps": [
-            "components"
-          ]
-        },
-        {
-          "file": "packages/pages/resources/tsconfig.json",
-          "hash": "16428873751145856223"
-        },
-        {
-          "file": "packages/pages/resources/tsconfig.lib.json",
-          "hash": "8070260354840731068"
+          "file": "apps/storybook-rn/tsconfig.storybook.json",
+          "hash": "5591705698269678481"
         }
       ],
       "web-react": [
@@ -613,140 +599,6 @@
           "hash": "6608330418885737313"
         }
       ],
-      "storybook-rn": [
-        {
-          "file": "apps/storybook-rn/.storybook/decorator.tsx",
-          "hash": "9543316120320903777",
-          "deps": [
-            "components",
-            "provider",
-            "npm:@storybook/react"
-          ]
-        },
-        {
-          "file": "apps/storybook-rn/.storybook/index.tsx",
-          "hash": "6175878785613726632",
-          "deps": [
-            "npm:@react-native-async-storage/async-storage"
-          ]
-        },
-        {
-          "file": "apps/storybook-rn/.storybook/main.ts",
-          "hash": "7608974139243832169",
-          "deps": [
-            "npm:@storybook/react-native"
-          ]
-        },
-        {
-          "file": "apps/storybook-rn/.storybook/preview.ts",
-          "hash": "2658863810051757929"
-        },
-        {
-          "file": "apps/storybook-rn/app.config.js",
-          "hash": "11768559118196222180"
-        },
-        {
-          "file": "apps/storybook-rn/babel.config.js",
-          "hash": "3092975944347548212"
-        },
-        {
-          "file": "apps/storybook-rn/metro.config.js",
-          "hash": "16471567664226919550",
-          "deps": [
-            "npm:@nx/expo",
-            "npm:@expo/metro-config",
-            "npm:metro-config",
-            "npm:react-native-svg-transformer"
-          ]
-        },
-        {
-          "file": "apps/storybook-rn/package.json",
-          "hash": "7192368924985936441",
-          "deps": [
-            "npm:@testing-library/jest-native",
-            "npm:@testing-library/react-native",
-            "npm:metro-config",
-            "npm:react-native",
-            "expo",
-            "npm:react-native-svg",
-            "npm:react-native-web"
-          ]
-        },
-        {
-          "file": "apps/storybook-rn/project.json",
-          "hash": "9379962466864857183"
-        },
-        {
-          "file": "apps/storybook-rn/src/app.tsx",
-          "hash": "10956431139392761886"
-        },
-        {
-          "file": "apps/storybook-rn/src/main.tsx",
-          "hash": "13427362390503284324",
-          "deps": [
-            "npm:react-native"
-          ]
-        },
-        {
-          "file": "apps/storybook-rn/src/storybook.ts",
-          "hash": "8489967469552792425",
-          "deps": [
-            "npm:@storybook/react-native"
-          ]
-        },
-        {
-          "file": "apps/storybook-rn/tsconfig.app.json",
-          "hash": "12161348979748758246"
-        },
-        {
-          "file": "apps/storybook-rn/tsconfig.json",
-          "hash": "12046819120642192556"
-        },
-        {
-          "file": "apps/storybook-rn/tsconfig.storybook.json",
-          "hash": "5591705698269678481"
-        }
-      ],
-      "benefits": [
-        {
-          "file": "packages/pages/benefits/.babelrc",
-          "hash": "78912473898857807"
-        },
-        {
-          "file": "packages/pages/benefits/README.md",
-          "hash": "5699554876552323482"
-        },
-        {
-          "file": "packages/pages/benefits/project.json",
-          "hash": "13478530874619302441"
-        },
-        {
-          "file": "packages/pages/benefits/src/index.ts",
-          "hash": "15456912301111091462"
-        },
-        {
-          "file": "packages/pages/benefits/src/screen.tsx",
-          "hash": "5552863980698965881",
-          "deps": [
-            "components"
-          ]
-        },
-        {
-          "file": "packages/pages/benefits/src/tamagui.config.ts",
-          "hash": "863797285285599761",
-          "deps": [
-            "components"
-          ]
-        },
-        {
-          "file": "packages/pages/benefits/tsconfig.json",
-          "hash": "16428873751145856223"
-        },
-        {
-          "file": "packages/pages/benefits/tsconfig.lib.json",
-          "hash": "8070260354840731068"
-        }
-      ],
       "welcome": [
         {
           "file": "packages/pages/welcome/.babelrc",
@@ -793,6 +645,276 @@
         {
           "file": "packages/pages/welcome/tsconfig.lib.json",
           "hash": "9404257396009813966"
+        }
+      ],
+      "expo": [
+        {
+          "file": "apps/expo/.gitignore",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/expo/.tamagui/tamagui.config.json",
+          "hash": "9276515872099238692"
+        },
+        {
+          "file": "apps/expo/app.config.js",
+          "hash": "2201734558414381037"
+        },
+        {
+          "file": "apps/expo/babel.config.js",
+          "hash": "11969485531380702282"
+        },
+        {
+          "file": "apps/expo/eas.json",
+          "hash": "1178741450365479478"
+        },
+        {
+          "file": "apps/expo/metro.config.js",
+          "hash": "11236508529860775193",
+          "deps": [
+            "npm:@nx/expo",
+            "npm:@expo/metro-config",
+            "npm:metro-config",
+            "npm:react-native-svg-transformer"
+          ]
+        },
+        {
+          "file": "apps/expo/package.json",
+          "hash": "4899604891009295382",
+          "deps": [
+            "npm:@biomejs/biome",
+            "npm:@expo/cli",
+            "npm:@expo/metro-runtime",
+            "npm:@nderscore/tamagui-typescript-plugin",
+            "npm:@nx/jest",
+            "npm:@nx/js",
+            "npm:@nx/next",
+            "npm:@nx/react",
+            "npm:@nx/react-native",
+            "npm:@nx/workspace",
+            "npm:@storybook/nextjs",
+            "npm:@swc-node/register",
+            "npm:@swc/core",
+            "npm:@tamagui/babel-plugin",
+            "npm:@tamagui/build",
+            "npm:@tamagui/cli",
+            "npm:@tamagui/next-plugin",
+            "npm:@testing-library/jest-native",
+            "npm:@testing-library/react",
+            "npm:@testing-library/react-native",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:babel-preset-expo",
+            "npm:eas-cli",
+            "npm:jest",
+            "npm:jest-environment-node",
+            "npm:next-compose-plugins",
+            "npm:next-transpile-modules",
+            "npm:nx",
+            "npm:typescript",
+            "npm:@expo/metro-config",
+            "npm:@expo/vector-icons",
+            "npm:@nx/devkit",
+            "npm:@nx/eslint",
+            "npm:@nx/expo",
+            "npm:@nx/web",
+            "npm:@nx/webpack",
+            "npm:@react-native-async-storage/async-storage",
+            "npm:@react-native-masked-view/masked-view",
+            "npm:@react-navigation/bottom-tabs",
+            "npm:@react-navigation/native",
+            "npm:@storybook/react",
+            "npm:@tamagui/config",
+            "npm:@tamagui/font-inter",
+            "npm:@tamagui/linear-gradient",
+            "npm:@tamagui/lucide-icons",
+            "npm:@tamagui/next-theme",
+            "npm:@tamagui/shorthands",
+            "npm:@tamagui/theme-builder",
+            "npm:@tamagui/themes",
+            "npm:@tamagui/web",
+            "npm:ajv",
+            "npm:chalk",
+            "npm:enhanced-resolve",
+            "npm:expo-asset",
+            "npm:expo-constants",
+            "npm:expo-dev-launcher",
+            "npm:expo-dev-menu",
+            "npm:expo-font",
+            "npm:expo-json-utils",
+            "npm:expo-linear-gradient",
+            "npm:expo-linking",
+            "npm:expo-manifests",
+            "npm:expo-modules-core",
+            "npm:expo-router",
+            "npm:expo-splash-screen",
+            "npm:expo-status-bar",
+            "npm:expo-web-browser",
+            "npm:fs-extra",
+            "npm:glob",
+            "npm:ignore",
+            "npm:metro-config",
+            "npm:metro-resolver",
+            "npm:next",
+            "npm:node-fetch",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-native",
+            "npm:react-native-gesture-handler",
+            "npm:react-native-safe-area-context",
+            "npm:react-native-screens",
+            "npm:react-native-svg",
+            "npm:react-native-svg-transformer",
+            "npm:react-native-web",
+            "npm:react-test-renderer",
+            "npm:solito",
+            "npm:tamagui",
+            "npm:tsconfig-paths",
+            "npm:tslib",
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "apps/expo/project.json",
+          "hash": "12649004158491293540"
+        },
+        {
+          "file": "apps/expo/src/app/(tabs)/_layout.tsx",
+          "hash": "14646516217860322158",
+          "deps": [
+            "npm:@tamagui/lucide-icons",
+            "npm:expo-router",
+            "npm:react-native",
+            "npm:solito"
+          ]
+        },
+        {
+          "file": "apps/expo/src/app/(tabs)/index.tsx",
+          "hash": "4823579430690369859",
+          "deps": [
+            "welcome",
+            "npm:react-native-safe-area-context"
+          ]
+        },
+        {
+          "file": "apps/expo/src/app/(tabs)/two.tsx",
+          "hash": "1468599560875611573",
+          "deps": [
+            "benefits",
+            "npm:react-native-safe-area-context"
+          ]
+        },
+        {
+          "file": "apps/expo/src/app/+html.tsx",
+          "hash": "17207447831631616251",
+          "deps": [
+            "npm:expo-router"
+          ]
+        },
+        {
+          "file": "apps/expo/src/app/[...missing].tsx",
+          "hash": "4020375200475354812",
+          "deps": [
+            "npm:expo-router",
+            "npm:solito",
+            "npm:tamagui"
+          ]
+        },
+        {
+          "file": "apps/expo/src/app/_layout.tsx",
+          "hash": "10031406163108703625",
+          "deps": [
+            "npm:expo-font",
+            "npm:expo-router",
+            "npm:expo-splash-screen",
+            "npm:react",
+            "npm:react-native",
+            "provider",
+            "npm:@tamagui/font-inter"
+          ]
+        },
+        {
+          "file": "apps/expo/src/app/modal.tsx",
+          "hash": "14541141712319490083",
+          "deps": [
+            "resources",
+            "npm:expo-status-bar",
+            "npm:react-native",
+            "npm:tamagui"
+          ]
+        },
+        {
+          "file": "apps/expo/src/assets/images/adaptive-icon.png",
+          "hash": "16102135492459408350"
+        },
+        {
+          "file": "apps/expo/src/assets/images/favicon.png",
+          "hash": "10556792184362654649"
+        },
+        {
+          "file": "apps/expo/src/assets/images/icon.png",
+          "hash": "14252482080276080187"
+        },
+        {
+          "file": "apps/expo/src/assets/images/splash.png",
+          "hash": "16493559885079032523"
+        },
+        {
+          "file": "apps/expo/tamagui.config.ts",
+          "hash": "863797285285599761",
+          "deps": [
+            "components"
+          ]
+        },
+        {
+          "file": "apps/expo/tsconfig.app.json",
+          "hash": "18405632307808946"
+        },
+        {
+          "file": "apps/expo/tsconfig.json",
+          "hash": "10036263952111864086"
+        }
+      ],
+      "benefits": [
+        {
+          "file": "packages/pages/benefits/.babelrc",
+          "hash": "78912473898857807"
+        },
+        {
+          "file": "packages/pages/benefits/README.md",
+          "hash": "5699554876552323482"
+        },
+        {
+          "file": "packages/pages/benefits/project.json",
+          "hash": "13478530874619302441"
+        },
+        {
+          "file": "packages/pages/benefits/src/index.ts",
+          "hash": "15456912301111091462"
+        },
+        {
+          "file": "packages/pages/benefits/src/screen.tsx",
+          "hash": "5552863980698965881",
+          "deps": [
+            "components"
+          ]
+        },
+        {
+          "file": "packages/pages/benefits/src/tamagui.config.ts",
+          "hash": "863797285285599761",
+          "deps": [
+            "components"
+          ]
+        },
+        {
+          "file": "packages/pages/benefits/tsconfig.json",
+          "hash": "16428873751145856223"
+        },
+        {
+          "file": "packages/pages/benefits/tsconfig.lib.json",
+          "hash": "8070260354840731068"
         }
       ],
       "provider": [
@@ -874,142 +996,44 @@
           "hash": "13958661953457524352"
         }
       ],
-      "components": [
+      "resources": [
         {
-          "file": "packages/components/.babelrc",
+          "file": "packages/pages/resources/.babelrc",
           "hash": "78912473898857807"
         },
         {
-          "file": "packages/components/project.json",
-          "hash": "6414497715312151050"
+          "file": "packages/pages/resources/README.md",
+          "hash": "5699554876552323482"
         },
         {
-          "file": "packages/components/src/components/Link.tsx",
-          "hash": "16098899456470963984",
+          "file": "packages/pages/resources/project.json",
+          "hash": "18246065849485450627"
+        },
+        {
+          "file": "packages/pages/resources/src/index.ts",
+          "hash": "15456912301111091462"
+        },
+        {
+          "file": "packages/pages/resources/src/screen.tsx",
+          "hash": "5792042192656276121",
           "deps": [
-            "npm:solito",
-            "npm:tamagui"
+            "components"
           ]
         },
         {
-          "file": "packages/components/src/components/SimpleCard.stories.tsx",
-          "hash": "3861650721332234074",
+          "file": "packages/pages/resources/src/tamagui.config.ts",
+          "hash": "863797285285599761",
           "deps": [
-            "npm:@storybook/react"
+            "components"
           ]
         },
         {
-          "file": "packages/components/src/components/SimpleCard.tsx",
-          "hash": "6568377244597625206",
-          "deps": [
-            "npm:react-native",
-            "npm:solito",
-            "npm:tamagui"
-          ]
+          "file": "packages/pages/resources/tsconfig.json",
+          "hash": "16428873751145856223"
         },
         {
-          "file": "packages/components/src/components/index.ts",
-          "hash": "7710246510085868370"
-        },
-        {
-          "file": "packages/components/src/index.ts",
-          "hash": "32006121363268421",
-          "deps": [
-            "npm:tamagui"
-          ]
-        },
-        {
-          "file": "packages/components/src/tamagui.config.ts",
-          "hash": "13496236918329529397",
-          "deps": [
-            "npm:@tamagui/config",
-            "npm:@tamagui/shorthands",
-            "npm:@tamagui/themes",
-            "npm:tamagui"
-          ]
-        },
-        {
-          "file": "packages/components/src/themes/colors-default.ts",
-          "hash": "6441909885021789099",
-          "deps": [
-            "npm:@tamagui/themes"
-          ]
-        },
-        {
-          "file": "packages/components/src/themes/colors-neon.ts",
-          "hash": "17117484697037784782"
-        },
-        {
-          "file": "packages/components/src/themes/colors-pastel.ts",
-          "hash": "4612790378661060686"
-        },
-        {
-          "file": "packages/components/src/themes/colors.ts",
-          "hash": "131303888485243076"
-        },
-        {
-          "file": "packages/components/src/themes/fonts.native.ts",
-          "hash": "15990697910402761162",
-          "deps": [
-            "npm:tamagui"
-          ]
-        },
-        {
-          "file": "packages/components/src/themes/fonts.ts",
-          "hash": "18075222972913355330",
-          "deps": [
-            "npm:@tamagui/font-inter"
-          ]
-        },
-        {
-          "file": "packages/components/src/themes/helpers.ts",
-          "hash": "5100298467673741387"
-        },
-        {
-          "file": "packages/components/src/themes/palettes.ts",
-          "hash": "16837118486978815377"
-        },
-        {
-          "file": "packages/components/src/themes/theme-generated.ts",
-          "hash": "230330076959699385"
-        },
-        {
-          "file": "packages/components/src/themes/theme.ts",
-          "hash": "4852093991100305456",
-          "deps": [
-            "npm:@tamagui/theme-builder"
-          ]
-        },
-        {
-          "file": "packages/components/src/themes/token-colors.ts",
-          "hash": "15418014123743239174",
-          "deps": [
-            "npm:@tamagui/web"
-          ]
-        },
-        {
-          "file": "packages/components/src/themes/token-radius.ts",
-          "hash": "2161728818311841456"
-        },
-        {
-          "file": "packages/components/src/themes/token-size.ts",
-          "hash": "3623140453765343735"
-        },
-        {
-          "file": "packages/components/src/themes/token-space.ts",
-          "hash": "3358941131464400065"
-        },
-        {
-          "file": "packages/components/src/themes/token-z-index.ts",
-          "hash": "9760641677503092541"
-        },
-        {
-          "file": "packages/components/tsconfig.json",
-          "hash": "12577759620003451177"
-        },
-        {
-          "file": "packages/components/tsconfig.lib.json",
-          "hash": "7918267111034704404"
+          "file": "packages/pages/resources/tsconfig.lib.json",
+          "hash": "8070260354840731068"
         }
       ]
     }

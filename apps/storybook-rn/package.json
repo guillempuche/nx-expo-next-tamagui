@@ -1,19 +1,19 @@
 {
-	"name": "storybook-rn",
-	"version": "0.0.1",
-	"main": "src/index",
-	"private": true,
-	"dependencies": {
-		"@testing-library/jest-native": "*",
-		"@testing-library/react-native": "*",
-		"metro-config": "*",
-		"react-native": "*",
-		"expo": "*",
-		"react-native-svg": "*",
-		"react-native-web": "*"
-	},
-	"scripts": {
-		"eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/storybook-rn && cp yarn.lock apps/storybook-rn",
-		"eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/storybook-rn"
-	}
+  "name": "storybook-rn",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index",
+  "scripts": {
+    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/storybook-rn",
+    "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/storybook-rn && cp yarn.lock apps/storybook-rn"
+  },
+  "dependencies": {
+    "@testing-library/jest-native": "*",
+    "@testing-library/react-native": "*",
+    "expo": "*",
+    "metro-config": "*",
+    "react-native": "*",
+    "react-native-svg": "*",
+    "react-native-web": "*"
+  }
 }
