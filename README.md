@@ -1,5 +1,7 @@
 # [WIP for Expo] Template as a monorepo: Nx, Expo React Native, NextJS, React Vite, Tamagui & Solito
 
+> ⚠️ **Warning:** Nx has not been fully battle-tested in Expo environments. Users have reported ongoing issues with bugs, errors, and path resolving in application-centric monorepos. Consider alternatives if you're working with Expo, like Yarn v4. [Learn more](https://github.com/nrwl/nx/issues/22631#issuecomment-2333513788).
+
 The utopia is to code once and have a native app and a native website.
 
 We can be close to that heaven. If we go deep into Typescript & React ecosystem, there are some libraries to make a scalable cross-platform application:
