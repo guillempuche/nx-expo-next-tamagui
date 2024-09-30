@@ -16,7 +16,7 @@ We can be close to that heaven. If we go deep into Typescript & React ecosystem,
 
 - Allow setting up Android compileSdkVersion and others <https://github.com/nrwl/nx/issues/26572>
 - Nx add more dependencies to the Expo app <https://github.com/nrwl/nx/issues/26571>
-- Nx + Expo with Yarn causes problems as pointed at <https://github.com/nrwl/nx/issues/22631>, <https://github.com/nrwl/nx/issues/26257>. **Solution**: use NPM in Nx, else seperate the monorepo from the Expo app like here <https://github.com/guillempuche/nx-monorepo-with-expo-standalone-app>
+- Nx + Expo with Yarn causes problems as pointed at <https://github.com/nrwl/nx/issues/22631>, <https://github.com/nrwl/nx/issues/26257>, <https://github.com/nrwl/nx/issues/21101>. **Solution**: use NPM in Nx, else seperate the monorepo from the Expo app like here <https://github.com/guillempuche/nx-monorepo-with-expo-standalone-app>
 - Nx + Expo with NPM is able to run Expo Go app, but not a local build as pointed at <https://github.com/nrwl/nx/issues/26285>. **Solution**: seperate the monorepo from the Expo app like here <https://github.com/guillempuche/nx-monorepo-with-expo-standalone-app> (I didn't finish it)
 - Next configuration file uses ESM and throws `ERR_UNSUPPORTED_DIR_IMPORT` error in Tamagui. **Solution**: https://github.com/guillempuche/nx-expo-next-tamagui/issues/4
 
